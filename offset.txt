@@ -1,4 +1,3 @@
-```cpp
 constexpr uint64_t XenuineDecrypt = 0xF242F28;
 constexpr uint64_t UWorld = 0x10906498;
 constexpr uint64_t GNames = 0x10B557D0;
