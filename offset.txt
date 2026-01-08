@@ -1,213 +1,205 @@
-constexpr uint64_t XenuineDecrypt = 0xF242F28;
-constexpr uint64_t UWorld = 0x10906498;
-constexpr uint64_t GNames = 0x10B557D0;
-constexpr uint64_t GNamesPtr = 0x8;
-constexpr uint64_t ChunkSize = 0x3E28;
-constexpr uint64_t GObjects = 0x108C7618;
-constexpr uint64_t CurrentLevel = 0x3B8;
-constexpr uint64_t Actors = 0x38;
-constexpr uint64_t ActorsForGC = 0x4A8;
-constexpr uint64_t GameInstance = 0x200;
-constexpr uint64_t GameState = 0x68;
-constexpr uint64_t LocalPlayer = 0x40;
-constexpr uint64_t PlayerController = 0x38;
-constexpr uint64_t AcknowledgedPawn = 0x4C0;
-constexpr uint64_t PlayerCameraManager = 0x4E8;
-
-constexpr uint64_t ObjID = 0x1C;
-constexpr uint64_t DecryptNameIndexRor = 0x1;
-constexpr uint64_t DecryptNameIndexXorKey1 = 0x6B6D93A9;
-constexpr uint64_t DecryptNameIndexXorKey2 = 0x884B1099;
-constexpr uint64_t DecryptNameIndexXorKey3 = 0xFF0000;
-constexpr uint64_t DecryptNameIndexRval = 0x18;
-constexpr uint64_t DecryptNameIndexSval = 0x18;
-constexpr uint64_t DecryptNameIndexDval = 0x8;
-
-constexpr uint64_t ViewTarget = 0x1750;
-constexpr uint64_t CameraCacheLocation = 0xA2C;
-constexpr uint64_t CameraCacheRotation = 0x480;
-constexpr uint64_t CameraCacheFOV = 0xA48;
-
-constexpr uint64_t LastTeamNum = 0x1938;
-constexpr uint64_t TeamNumber = 0x9DC;
-
-constexpr uint64_t MyHUD = 0x4E0;
-constexpr uint64_t BlockInputWidgetList = 0x5C8;
-constexpr uint64_t bShowMouseCursor = 0x670;
-constexpr uint64_t ComponentLocation = 0x2D0;
-constexpr uint64_t ComponentToWorld = 0x2C0;
-constexpr uint64_t CharacterState = 0x2810;
-constexpr uint64_t CharacterName = 0x11B0;
-constexpr uint64_t CharacterMovement = 0x7B8;
-constexpr uint64_t WorldToMap = 0x110;
-constexpr uint64_t LayoutData = 0x40;
-constexpr uint64_t Offsets = 0x0;
-constexpr uint64_t Alignment = 0x20;
-constexpr uint64_t Visibility = 0xA9;
-constexpr uint64_t SelectMinimapSizeIndex = 0x5D0;
-constexpr uint64_t Slot = 0x38;
-constexpr uint64_t WidgetStateMap = 0x550;
-
-constexpr uint64_t FeatureRepObject = 0xD10;
-constexpr uint64_t SafetyZonePosition = 0x148;
-constexpr uint64_t SafetyZoneRadius = 0x13C;
-constexpr uint64_t BlueZoneRadius = 0x138;
-constexpr uint64_t BlueZonePosition = 0x12C;
-constexpr uint64_t NumAliveTeams = 0x4DC;
-
-constexpr uint64_t HeaFlag = 0x188;
-constexpr uint64_t Health1 = 0x9A8;
-constexpr uint64_t Health2 = 0xA40;
-constexpr uint64_t Health3 = 0x994;
-constexpr uint64_t Health4 = 0x980;
-constexpr uint64_t Health5 = 0x995;
-constexpr uint64_t Health6 = 0x990;
-constexpr uint64_t Health_keys0 = 0xCEC7A598;
-constexpr uint64_t Health_keys1 = 0x9B63B237;
-constexpr uint64_t Health_keys2 = 0xCA5153A4;
-constexpr uint64_t Health_keys3 = 0x373848C9;
-constexpr uint64_t Health_keys4 = 0x4E911D0A;
-constexpr uint64_t Health_keys5 = 0x23DDAA15;
-constexpr uint64_t Health_keys6 = 0x945C9C8;
-constexpr uint64_t Health_keys7 = 0xA420B121;
-constexpr uint64_t Health_keys8 = 0xBAA7A58;
-constexpr uint64_t Health_keys9 = 0xB1EF3787;
-constexpr uint64_t Health_keys10 = 0xE27522B1;
-constexpr uint64_t Health_keys11 = 0x868ADB52;
-constexpr uint64_t Health_keys12 = 0xBD4EF2D5;
-constexpr uint64_t Health_keys13 = 0x3793C907;
-constexpr uint64_t Health_keys14 = 0xC9099E38;
-constexpr uint64_t Health_keys15 = 0xE5D02AED;
-constexpr uint64_t GroggyHealth = 0x1E70;
-
-constexpr uint64_t PlayerArray = 0x428;
-constexpr uint64_t AccountId = 0x708;
-constexpr uint64_t PlayerName = 0x478;
-constexpr uint64_t PlayerStatusType = 0x418;
-constexpr uint64_t SquadMemberIndex = 0x6A0;
-constexpr uint64_t PlayerState = 0x448;
-constexpr uint64_t PlayerStatistics = 0x7A8;
-constexpr uint64_t DamageDealtOnEnemy = 0x6B4;
-constexpr uint64_t SpectatedCount = 0x3370;
-
-constexpr uint64_t PartnerLevel = 0x926;
-constexpr uint64_t SurvivalTier = 0xCC0;
-constexpr uint64_t SurvivalLevel = 0xCC4;
-
-constexpr uint64_t CharacterClanInfo = 0x940;
-
-constexpr uint64_t EquippedWeapons = 0x208;
-constexpr uint64_t WeaponProcessor = 0x9B0;
-constexpr uint64_t CurrentWeaponIndex = 0x319;
-constexpr uint64_t WeaponTrajectoryData = 0x1130;
-constexpr uint64_t TrajectoryGravityZ = 0x1124;
-constexpr uint64_t FiringAttachPoint = 0x8C0;
-constexpr uint64_t ScopingAttachPoint = 0xCF0;
-constexpr uint64_t TrajectoryConfig = 0x108;
-constexpr uint64_t BallisticCurve = 0x28;
-constexpr uint64_t FloatCurves = 0x38;
-constexpr uint64_t Mesh3P = 0x810;
-
-constexpr uint64_t Keys = 0x60;
-
-constexpr uint64_t AttachedStaticComponentMap = 0x1508;
-
-constexpr uint64_t WeaponConfig_WeaponClass = 0x729;
-constexpr uint64_t ElapsedCookingTime = 0xB10;
-
-constexpr uint64_t PlayerInput = 0x560;
-constexpr uint64_t InputAxisProperties = 0x138;
-
-constexpr uint64_t LastUpdateVelocity = 0x3E0;
-constexpr uint64_t Mesh = 0x5F8;
-
-constexpr uint64_t RootComponent = 0x1E8;
-constexpr uint64_t StaticMesh = 0xAE8;
-constexpr uint64_t Eyes = 0x75C;
-constexpr uint64_t bAlwaysCreatePhysicsState = 0x498;
-
-constexpr uint64_t VehicleMovement = 0x480;
-constexpr uint64_t VehicleRiderComponent = 0x2120;
-constexpr uint64_t ReplicatedMovement = 0xE0;
-constexpr uint64_t LastVehiclePawn = 0x270;
-constexpr uint64_t SeatIndex = 0x230;
-
-constexpr uint64_t Wheels = 0x328;
-constexpr uint64_t WheelLocation = 0x100;
-constexpr uint64_t DampingRate = 0x54;
-constexpr uint64_t ShapeRadius = 0x48;
-
-constexpr uint64_t DroppedItemGroup = 0x350;
-constexpr uint64_t ItemPackageItems = 0x5A8;
-constexpr uint64_t DroppedItemGroupUItem = 0x880;
-
-constexpr uint64_t AttachedItems = 0x868;
-constexpr uint64_t WeaponAttachmentData = 0x130;
-constexpr uint64_t ItemTable = 0xB0;
-constexpr uint64_t ItemID = 0x268;
-constexpr uint64_t DroppedItem = 0x470;
-
-constexpr uint64_t AnimScriptInstance = 0xE30;
-constexpr uint64_t PreEvalPawnState = 0x700;
-
-constexpr uint64_t bIsScoping_CP = 0x92D;
-constexpr uint64_t bIsReloading_CP = 0x805;
-constexpr uint64_t RecoilADSRotation_CP = 0x8F4;
-constexpr uint64_t ControlRotation_CP = 0x71C;
-constexpr uint64_t LeanLeftAlpha_CP = 0x764;
-constexpr uint64_t LeanRightAlpha_CP = 0x768;
-constexpr uint64_t CurrentAmmoData = 0xC44;
-
-constexpr uint64_t StaticSockets = 0xC8;
-constexpr uint64_t StaticSocketName = 0x30;
-constexpr uint64_t StaticRelativeScale = 0x50;
-constexpr uint64_t StaticRelativeLocation = 0x38;
-constexpr uint64_t StaticRelativeRotation = 0x44;
-
-constexpr uint64_t InputYawScale = 0x664;
-
-constexpr uint64_t AimOffsets = 0x1BB8;
-
-constexpr uint64_t AntiCheatCharacterSyncManager = 0x300;
-
-constexpr uint64_t TimeSeconds = 0x954;
-constexpr uint64_t TimeTillExplosion = 0x844;
-constexpr uint64_t ExplodeState = 0x5A0;
-constexpr uint64_t TrainingMapGrid = 0x5B8;
-constexpr uint64_t MortarRotation = 0x538;
-constexpr uint64_t MortarEntity = 0x118;
-
-constexpr uint64_t MapGrid_Map = 0x4B0;
-constexpr uint64_t Gender = 0xAC0;
-
-constexpr uint64_t MouseX = 0x4A18;
-constexpr uint64_t MouseY = 0x4A19;
-
-constexpr uint64_t SPOOFCALL = 0x22A2E05;
-constexpr uint64_t LineTraceSingle = 0xB7C464C;
-constexpr uint64_t HOOK = 0x103F96B0;
-constexpr uint64_t HOOK_TWO = 0xBFFC7FE;
-
-constexpr uint64_t InventoryFacade = 0x1948;
-constexpr uint64_t Inventory = 0x418;
-constexpr uint64_t InventoryItems = 0x568;
-constexpr uint64_t InventoryItemCount = 0x570;
-constexpr uint64_t InventoryItemTagItemCount = 0x40;
-
-constexpr uint64_t Equipment = 0x430;
-constexpr uint64_t ItemsArray = 0x508;
-constexpr uint64_t Durability = 0x1F4;
-constexpr uint64_t Durabilitymax = 0x1F0;
-
-constexpr uint64_t VehicleCommonComponent = 0xB40;
-constexpr uint64_t FloatingVehicleCommonComponent = 0x4F0;
-constexpr uint64_t VehicleFuel = 0x2E0;
-constexpr uint64_t VehicleFuelMax = 0x2E4;
-constexpr uint64_t VehicleHealth = 0x2D8;
-constexpr uint64_t VehicleHealthMax = 0x2DC;
-
-constexpr uint64_t PhysxSDK = 0x1047BB08;
-constexpr uint64_t PhysicsScene = 0x440;
-constexpr uint64_t mPhysXScene = 0xD0;
-constexpr uint64_t rigid_dynamics = 0x3B98;
-constexpr uint64_t Unreal_Engine = 0x109027A0;
+constexpr uint64_t version= 39.2.1.51;
+constexpr uint64_t XenuineDecrypt= 0XF61C728;
+constexpr uint64_t UWorld= 0X10DE9D58;
+constexpr uint64_t GNames= 0X11038910;
+constexpr uint64_t GNamesPtr= 0X0;
+constexpr uint64_t ChunkSize= 0X3F7C;
+constexpr uint64_t PlayerController= 0X30;
+constexpr uint64_t LocalPlayer= 0XB0;
+constexpr uint64_t GameInstance= 0XAA8;
+constexpr uint64_t GameState= 0X378;
+constexpr uint64_t CurrentLevel= 0X838;
+constexpr uint64_t Actors= 0X220;
+constexpr uint64_t AcknowledgedPawn= 0X4A0;
+constexpr uint64_t PlayerCameraManager= 0X4C8;
+ 
+constexpr uint64_t ObjID= 0X8;
+constexpr uint64_t DecryptNameIndexRor= 0X1;
+constexpr uint64_t DecryptNameIndexType= 0X3;
+constexpr uint64_t DecryptNameIndexXorKey1= 0XF725E069;
+constexpr uint64_t DecryptNameIndexXorKey2= 0X84AD45EE;
+constexpr uint64_t DecryptNameIndexXorKey3= 0XFFFF0000;
+constexpr uint64_t DecryptNameIndexRval= 0X3;
+constexpr uint64_t DecryptNameIndexSval= 0XD;
+constexpr uint64_t DecryptNameIndexDval= 0X0;
+ 
+constexpr uint64_t ViewTarget= 0X410;
+constexpr uint64_t CameraCacheLocation= 0XA8C;
+constexpr uint64_t CameraCacheRotation= 0XA9C;
+constexpr uint64_t CameraCacheFOV= 0XAA8;
+ 
+constexpr uint64_t LastTeamNum= 0X1230;
+constexpr uint64_t TeamNumber= 0X4F4;
+ 
+constexpr uint64_t MyHUD= 0X4C0;
+constexpr uint64_t BlockInputWidgetList= 0X5B0;
+constexpr uint64_t bShowMouseCursor= 0X650;
+constexpr uint64_t ComponentLocation= 0X210;
+constexpr uint64_t ComponentToWorld= 0X200;
+constexpr uint64_t CharacterState= 0X1615;
+constexpr uint64_t CharacterName= 0X1808;
+constexpr uint64_t CharacterMovement= 0X6F8;
+constexpr uint64_t WorldToMap= 0X780;
+constexpr uint64_t LayoutData= 0X38;
+constexpr uint64_t Offsets= 0X0;
+constexpr uint64_t Alignment= 0X20;
+constexpr uint64_t Visibility= 0XA1;
+constexpr uint64_t SelectMinimapSizeIndex= 0X5D0;
+constexpr uint64_t Slot= 0X30;
+constexpr uint64_t WidgetStateMap= 0X538;
+ 
+constexpr uint64_t FeatureRepObject= 0XD08;
+constexpr uint64_t SafetyZonePosition= 0XA0;
+constexpr uint64_t SafetyZoneRadius= 0XAC;
+constexpr uint64_t BlueZoneRadius= 0XBC;
+constexpr uint64_t BlueZonePosition= 0XB0;
+constexpr uint64_t NumAliveTeams= 0X540;
+ 
+constexpr uint64_t HeaFlag= 0X274;
+constexpr uint64_t Health1= 0XA50;
+constexpr uint64_t Health2= 0XA38;
+constexpr uint64_t Health3= 0XA34;
+constexpr uint64_t Health4= 0XA20;
+constexpr uint64_t Health5= 0XA35;
+constexpr uint64_t Health6= 0XA30;
+constexpr uint64_t Health_keys0= 0XCEC7A598;
+constexpr uint64_t Health_keys1= 0X9B63B220;
+constexpr uint64_t Health_keys2= 0XCA5B44BC;
+constexpr uint64_t Health_keys3= 0X203848C3;
+constexpr uint64_t Health_keys4= 0X44911D0A;
+constexpr uint64_t Health_keys5= 0X23DDAA02;
+constexpr uint64_t Health_keys6= 0X945C3C8;
+constexpr uint64_t Health_keys7= 0XBC38B121;
+constexpr uint64_t Health_keys8= 0XBAA7A58;
+constexpr uint64_t Health_keys9= 0XA9EF2087;
+constexpr uint64_t Health_keys10= 0XE27535B1;
+constexpr uint64_t Health_keys11= 0X9E8ADB58;
+constexpr uint64_t Health_keys12= 0XBD44E5D5;
+constexpr uint64_t Health_keys13= 0X2093C307;
+constexpr uint64_t Health_keys14= 0XC3099E38;
+constexpr uint64_t Health_keys15= 0XE5D02AFA;
+constexpr uint64_t GroggyHealth= 0X17B0;
+ 
+constexpr uint64_t PlayerArray= 0X410;
+constexpr uint64_t AccountId= 0X4D8;
+constexpr uint64_t PlayerName= 0X448;
+constexpr uint64_t PlayerStatusType= 0X470;
+constexpr uint64_t SquadMemberIndex= 0X9B0;
+constexpr uint64_t PlayerState= 0X428;
+constexpr uint64_t PlayerStatistics= 0X4E8;
+constexpr uint64_t DamageDealtOnEnemy= 0X9A8;
+constexpr uint64_t SpectatedCount= 0X10F8;
+ 
+constexpr uint64_t PartnerLevel= 0X51E;
+constexpr uint64_t SurvivalTier= 0XC60;
+constexpr uint64_t SurvivalLevel= 0XC64;
+ 
+constexpr uint64_t CharacterClanInfo= 0X940;
+ 
+constexpr uint64_t EquippedWeapons= 0X1F8;
+constexpr uint64_t WeaponProcessor= 0X968;
+constexpr uint64_t CurrentWeaponIndex= 0X309;
+constexpr uint64_t WeaponTrajectoryData= 0X1110;
+constexpr uint64_t TrajectoryGravityZ= 0X1060;
+constexpr uint64_t FiringAttachPoint= 0X8B0;
+constexpr uint64_t ScopingAttachPoint= 0XF38;
+constexpr uint64_t TrajectoryConfig= 0X100;
+constexpr uint64_t BallisticCurve= 0X28;
+constexpr uint64_t FloatCurves= 0X30;
+constexpr uint64_t Mesh3P= 0X800;
+ 
+constexpr uint64_t Keys= 0X60;
+ 
+constexpr uint64_t AttachedStaticComponentMap= 0X1508;
+ 
+constexpr uint64_t ElapsedCookingTime= 0XAF8;
+ 
+constexpr uint64_t PlayerInput= 0X540;
+constexpr uint64_t InputAxisProperties= 0X130;
+ 
+constexpr uint64_t LastUpdateVelocity= 0X3D0;
+constexpr uint64_t Mesh= 0X6D8;
+ 
+constexpr uint64_t RootComponent= 0X170;
+constexpr uint64_t StaticMesh= 0XAC8;
+constexpr uint64_t Eyes= 0X74C;
+constexpr uint64_t bAlwaysCreatePhysicsState= 0X488;
+ 
+constexpr uint64_t VehicleMovement= 0X468;
+constexpr uint64_t VehicleRiderComponent= 0X20C0;
+constexpr uint64_t ReplicatedMovement= 0XD8;
+constexpr uint64_t LastVehiclePawn= 0X260;
+constexpr uint64_t SeatIndex= 0X220;
+ 
+constexpr uint64_t Wheels= 0X318;
+constexpr uint64_t WheelLocation= 0XF8;
+constexpr uint64_t DampingRate= 0X4C;
+constexpr uint64_t ShapeRadius= 0X40;
+ 
+constexpr uint64_t DroppedItemGroup= 0X1A8;
+constexpr uint64_t ItemPackageItems= 0X590;
+constexpr uint64_t DroppedItemGroupUItem= 0X870;
+ 
+constexpr uint64_t AttachedItems= 0X858;
+constexpr uint64_t WeaponAttachmentData= 0X128;
+constexpr uint64_t ItemTable= 0XA8;
+constexpr uint64_t ItemID= 0X268;
+constexpr uint64_t DroppedItem= 0X458;
+ 
+constexpr uint64_t AnimScriptInstance= 0XE20;
+constexpr uint64_t PreEvalPawnState= 0X6F8;
+ 
+constexpr uint64_t bIsScoping_CP= 0X91D;
+constexpr uint64_t bIsReloading_CP= 0X7FD;
+constexpr uint64_t RecoilADSRotation_CP= 0X8E4;
+constexpr uint64_t ControlRotation_CP= 0X714;
+constexpr uint64_t LeanLeftAlpha_CP= 0X75C;
+constexpr uint64_t LeanRightAlpha_CP= 0X760;
+constexpr uint64_t CurrentAmmoData= 0XF28;
+ 
+constexpr uint64_t StaticSockets= 0XC0;
+constexpr uint64_t StaticSocketName= 0X28;
+constexpr uint64_t StaticRelativeLocation= 0X30;
+constexpr uint64_t StaticRelativeRotation= 0X3C;
+constexpr uint64_t StaticRelativeScale= 0X48;
+ 
+constexpr uint64_t InputYawScale= 0X644;
+ 
+constexpr uint64_t AimOffsets= 0X1B98;
+ 
+constexpr uint64_t AntiCheatCharacterSyncManager= 0X300;
+ 
+constexpr uint64_t TimeSeconds= 0X968;
+constexpr uint64_t TimeTillExplosion= 0X824;
+constexpr uint64_t ExplodeState= 0X580;
+constexpr uint64_t TrainingMapGrid= 0X6F8;
+constexpr uint32_t MouseX= 0X498F;
+constexpr uint32_t MouseY= 0X4990;
+constexpr uint32_t Health= Health4;
+constexpr uint32_t Gender= GroggyHealth;
+constexpr uint32_t bEncryptedHealth= Health + 0x15;
+constexpr uint32_t EncryptedHealthOffset= Health + 0x14;
+constexpr uint32_t DecryptedHealthOffset= Health + 0x10;
+constexpr uint64_t WeaponConfig_WeaponClass= 0X58C;
+ 
+constexpr uint64_t SPOOFCALL= 0X25594D5;
+constexpr uint64_t LineTraceSingle= 0XBA2DE10;
+constexpr uint64_t HOOK= 0X107FC8F0;
+constexpr uint64_t HOOK_TWO= 0XC2C5C35;
+ 
+constexpr uint64_t VehicleCommonComponent= 0XB30;
+constexpr uint64_t VehicleCommonComponents= 0X4D8;
+constexpr uint64_t VehicleFuel= 0X2D0;
+constexpr uint64_t VehicleFuelMax= 0X2D4;
+constexpr uint64_t VehicleHealth= 0X2C8;
+constexpr uint64_t VehicleHealthMax= 0X2CC;
+ 
+constexpr uint64_t PhysxSDK= 0X1089E508;
+ 
+constexpr uint64_t InventoryFacade= 0XF78;
+constexpr uint64_t Inventory= 0X410;
+constexpr uint64_t InventoryItems= 0X548;
+constexpr uint64_t InventoryItemTagItemCount= 0X38;
+ 
+constexpr uint64_t MortarLocation= 0x110;
+constexpr uint64_t MortarRotation= 0X520;
