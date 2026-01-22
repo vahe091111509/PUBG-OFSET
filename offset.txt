@@ -1,13 +1,16 @@
-// ========== ����ȫ�� ==========
+
+constexpr uint64_t BoneSize = 0x30;
+
+// ========== »щґЎИ«ѕЦ ==========
 constexpr uint64_t XenuineDecrypt = 0xF5D2428;
 constexpr uint64_t UWorld = 0x10EA2558;
 constexpr uint64_t GNames = 0x110F1080;
 constexpr uint64_t GNamesPtr = 0x0;
 constexpr uint64_t ChunkSize = 0x3E40;
-constexpr uint64_t GObjects = 0x10D038A0;  // ��ԭ���ģ��°汾û���ṩ
+constexpr uint64_t GObjects = 0x10D038A0;  // ДъФ­АґµДЈ¬РВ°ж±ѕГ»УРМб№©
 constexpr uint64_t CurrentLevel = 0x9C8;
 constexpr uint64_t Actors = 0x1D8;
-constexpr uint64_t ActorsForGC = 0x1D0;    // ��ԭ���ģ��°汾û���ṩ
+constexpr uint64_t ActorsForGC = 0x1D0;    // ДъФ­АґµДЈ¬РВ°ж±ѕГ»УРМб№©
 constexpr uint64_t GameInstance = 0x108;
 constexpr uint64_t GameState = 0x708;
 constexpr uint64_t LocalPlayer = 0xE8;
@@ -16,7 +19,7 @@ constexpr uint64_t AcknowledgedPawn = 0x4A0;
 constexpr uint64_t PlayerCameraManager = 0x4C8;
 constexpr uint64_t ObjID = 0x10;
 
-// ========== ������� ==========
+// ========== ЅвГЬПа№Ш ==========
 constexpr uint64_t DecryptNameIndexRor = 0x1;
 constexpr uint64_t DecryptNameIndexXorKey1 = 0xEAD5C514;
 constexpr uint64_t DecryptNameIndexXorKey2 = 0xB7D15DF4;
@@ -25,13 +28,13 @@ constexpr uint64_t DecryptNameIndexRval = 0x5;
 constexpr uint64_t DecryptNameIndexSval = 0xB;
 constexpr uint64_t DecryptNameIndexDval = 0x15;
 
-// ========== ������ӽ� ==========
+// ========== Па»ъУлКУЅЗ ==========
 constexpr uint64_t ViewTarget = 0xA60;
 constexpr uint64_t CameraCacheLocation = 0x1610;
 constexpr uint64_t CameraCacheRotation = 0x161C;
 constexpr uint64_t CameraCacheFOV = 0x1630;
 
-// ========== ��Ϸ״̬/���� ==========
+// ========== УОП·ЧґМ¬/¶УОй ==========
 constexpr uint64_t LastTeamNum = 0x1778;
 constexpr uint64_t TeamNumber = 0x8D4;
 constexpr uint64_t NumAliveTeams = 0x4D0;
@@ -41,7 +44,7 @@ constexpr uint64_t BlueZoneRadius = 0xBC;
 constexpr uint64_t BlueZonePosition = 0xB0;
 constexpr uint64_t TimeSeconds = 0x930;
 
-// ========== UI������ ==========
+// ========== UIУлКдИл ==========
 constexpr uint64_t MyHUD = 0x4C0;
 constexpr uint64_t BlockInputWidgetList = 0x5A8;
 constexpr uint64_t bShowMouseCursor = 0x650;
@@ -58,7 +61,7 @@ constexpr uint64_t InputYawScale = 0x644;
 constexpr uint64_t PlayerInput = 0x540;
 constexpr uint64_t InputAxisProperties = 0x130;
 
-// ========== ��ɫ���� ==========
+// ========== ЅЗЙ«КфРФ ==========
 constexpr uint64_t ComponentLocation = 0x230;
 constexpr uint64_t ComponentToWorld = 0x220;
 constexpr uint64_t CharacterState = 0x1DE4;
@@ -67,7 +70,7 @@ constexpr uint64_t CharacterMovement = 0x718;
 constexpr uint64_t LastUpdateVelocity = 0x3D0;
 constexpr uint64_t Mesh = 0x6E8;
 constexpr uint64_t RootComponent = 0xD8;
-constexpr uint64_t StaticMesh = 0xAC8;
+constexpr uint64_t StaticMesh = 0xAD8;
 constexpr uint64_t Eyes = 0x74C;
 constexpr uint64_t bAlwaysCreatePhysicsState = 0x488;
 constexpr uint64_t PreEvalPawnState = 0x6F8;
@@ -75,7 +78,7 @@ constexpr uint64_t AnimScriptInstance = 0xE20;
 constexpr uint64_t AntiCheatCharacterSyncManager = 0x820;
 constexpr uint64_t CharacterClanInfo = 0x8E8;
 
-// ========== Ѫ��(���ݾɴ���) ==========
+// ========== СЄБї(јжИЭѕЙґъВл) ==========
 constexpr uint64_t HeaFlag = 0x2AC;
 constexpr uint64_t Health1 = 0x978;
 constexpr uint64_t Health2 = 0xA40;
@@ -85,7 +88,7 @@ constexpr uint64_t Health5 = 0x96D;
 constexpr uint64_t Health6 = 0x968;
 constexpr uint64_t GroggyHealth = 0x1F00;
 
-// ========== Ѫ������Keys ==========
+// ========== СЄБїЅвГЬKeys ==========
 constexpr uint64_t Health_keys0 = 0xCEC7A598;
 constexpr uint64_t Health_keys1 = 0x9B63B220;
 constexpr uint64_t Health_keys2 = 0xCA5B44BC;
@@ -103,7 +106,7 @@ constexpr uint64_t Health_keys13 = 0x2093C307;
 constexpr uint64_t Health_keys14 = 0xC3099E38;
 constexpr uint64_t Health_keys15 = 0xE5D02AFA;
 
-// ========== �����Ϣ ==========
+// ========== НжјТРЕПў ==========
 constexpr uint64_t PlayerArray = 0x408;
 constexpr uint64_t AccountId = 0xA00;
 constexpr uint64_t PlayerName = 0x440;
@@ -117,7 +120,7 @@ constexpr uint64_t PartnerLevel = 0x98A;
 constexpr uint64_t SurvivalTier = 0xC48;
 constexpr uint64_t SurvivalLevel = 0xC4C;
 
-// ========== ��������Ʒ ==========
+// ========== ОдЖчУлОпЖ· ==========
 constexpr uint64_t EquippedWeapons = 0x1F8;
 constexpr uint64_t WeaponProcessor = 0x970;
 constexpr uint64_t CurrentWeaponIndex = 0x309;
@@ -148,7 +151,7 @@ constexpr uint64_t InventoryItems = 0x590;
 constexpr uint64_t InventoryItemCount = 0x598;
 constexpr uint64_t InventoryItemTagItemCount = 0x38;
 
-// ========== ����������״̬ ==========
+// ========== ОдЖчїШЦЖУлЧґМ¬ ==========
 constexpr uint64_t bIsScoping_CP = 0x91D;
 constexpr uint64_t bIsReloading_CP = 0x7FD;
 constexpr uint64_t RecoilADSRotation_CP = 0x8E4;
@@ -159,14 +162,14 @@ constexpr uint64_t AimOffsets = 0x1B68;
 constexpr uint64_t TimeTillExplosion = 0x824;
 constexpr uint64_t ExplodeState = 0x628;
 
-// ========== ��̬����/Socket ==========
+// ========== ѕІМ¬¶ФПу/Socket ==========
 constexpr uint64_t StaticSockets = 0xC0;
 constexpr uint64_t StaticSocketName = 0x28;
 constexpr uint64_t StaticRelativeScale = 0x48;
 constexpr uint64_t StaticRelativeLocation = 0x30;
 constexpr uint64_t StaticRelativeRotation = 0x3C;
 
-// ========== �ؾ� ==========
+// ========== ФШѕЯ ==========
 constexpr uint64_t VehicleMovement = 0x468;
 constexpr uint64_t VehicleRiderComponent = 0x20E0;
 constexpr uint64_t ReplicatedMovement = 0x60;
@@ -183,29 +186,34 @@ constexpr uint64_t VehicleFuelMax = 0x2D4;
 constexpr uint64_t VehicleHealth = 0x2C8;
 constexpr uint64_t VehicleHealthMax = 0x2CC;
 
-// ========== ��ͼ/���� ==========
+// ========== µШНј/»·ѕі ==========
 constexpr uint64_t MapGrid_Map = 0x4B0;
 constexpr uint64_t TrainingMapGrid = 0x5B8;
 constexpr uint64_t FeatureRepObject = 0xD08;
 constexpr uint64_t WorldToMap = 0x6A4;
-constexpr uint64_t Gender = 0xAC0;  // ��ԭ���ģ��°汾û���ṩ
+constexpr uint64_t Gender = 0xAC0;  // ДъФ­АґµДЈ¬РВ°ж±ѕГ»УРМб№©
 constexpr uint64_t MortarRotation = 0x520;
 constexpr uint64_t MortarEntity = 0x98;
 
-// ========== �������� ==========
-constexpr uint64_t SPOOFCALL = 0x254EEF5;    // ��ԭ���ģ��°汾û���ṩ
-constexpr uint64_t LineTraceSingle = 0xBA36E68;  // ��ԭ���ģ��°汾û���ṩ
-constexpr uint64_t HOOK = 0x108158F0;    // ��ԭ���ģ��°汾û���ṩ
-constexpr uint64_t HOOK_TWO = 0xA87ABA;  // ��ԭ���ģ��°汾û���ṩ
+// ========== ЖдЛыФУПо ==========
+constexpr uint64_t SPOOFCALL = 0x254EEF5;    // ДъФ­АґµДЈ¬РВ°ж±ѕГ»УРМб№©
+constexpr uint64_t LineTraceSingle = 0xBA36E68;  // ДъФ­АґµДЈ¬РВ°ж±ѕГ»УРМб№©
+constexpr uint64_t HOOK = 0x108158F0;    // ДъФ­АґµДЈ¬РВ°ж±ѕГ»УРМб№©
+constexpr uint64_t HOOK_TWO = 0xA87ABA;  // ДъФ­АґµДЈ¬РВ°ж±ѕГ»УРМб№©
 constexpr uint64_t PhysxSDK = 0x10856508;
-constexpr uint64_t PhysicsScene = 0x780;    // ��ԭ���ģ��°汾û���ṩ
-constexpr uint64_t mPhysXScene = 0xD0;    // ��ԭ���ģ��°汾û���ṩ
-constexpr uint64_t rigid_dynamics = 0x3B98;  // ��ԭ���ģ��°汾û���ṩ
-constexpr uint64_t Unreal_Engine = 0x10D3EA60;  // ��ԭ���ģ��°汾û���ṩ
+constexpr uint64_t PhysicsScene = 0x780;    // ДъФ­АґµДЈ¬РВ°ж±ѕГ»УРМб№©
+constexpr uint64_t mPhysXScene = 0xD0;    // ДъФ­АґµДЈ¬РВ°ж±ѕГ»УРМб№©
+constexpr uint64_t rigid_dynamics = 0x3B98;  // ДъФ­АґµДЈ¬РВ°ж±ѕГ»УРМб№©
+constexpr uint64_t Unreal_Engine = 0x10D3EA60;  // ДъФ­АґµДЈ¬РВ°ж±ѕГ»УРМб№©
 
-// ========== С��ͼ/������ ==========
+// ========== РЎµШНј/єуЧшБ¦ ==========
 constexpr uint64_t CurrentMinimapViewScale1D = 0x494;
 constexpr uint64_t LastMinimapPos = 0x4A8;
 constexpr uint64_t Minimap = 0x488;
 constexpr uint64_t RecoilValueVector = 0x1040;
+uint32_t ComponentVelocity = 0x354;
+ 
+// Rendering
+uint64_t LastSubmitTime = 0x748; 
+uint64_t LastRenderTimeOnScreen = 0x74C;
 constexpr uint64_t VerticalRecovery = 0x1010;
