@@ -1,4 +1,4 @@
-constexpr uint64_t version= 40.1;
+
 constexpr uint64_t XenuineDecrypt= 0XF81AD28;
 constexpr uint64_t UWorld= 0X1112CBB8;
 constexpr uint64_t GNames= 0X113A8130;
