@@ -93,13 +93,13 @@ constexpr uint64_t Gender = 0xAC8;
 constexpr uint64_t AimOffsets = 0x1AB8;
 constexpr uint64_t VehicleRiderComponent = 0x2050;
 constexpr uint64_t CharacterName = 0x1D70;
-constexpr uint64_t InventoryFacade = 0x1728;
+constexpr uint64_t InventoryFacade = 0x1728;    // InventoryFacade at -0x1 after 0x1720 = 0x1728 (confirmed)
 constexpr uint64_t CharacterState = 0x1020;
-constexpr uint64_t SpectatedCount = 0x113C;
-constexpr uint64_t GroggyHealth = 0x14B0;
-constexpr uint64_t LastTeamNum = 0x2A98;
+constexpr uint64_t SpectatedCount = 0x113C;     // *6a3d6e0442 at 0x113c (confirmed from dump)
+constexpr uint64_t GroggyHealth = 0x14B0;       // DBNOHealth at 0x14b0 (confirmed from dump)
+constexpr uint64_t LastTeamNum = 0x2A98;        // *f622b3bae5 at 0x2a98 (confirmed from dump)
 constexpr uint64_t AntiCheatCharacterSyncManager = 0xD28;
-constexpr uint64_t PreEvalPawnState = 0x630;
+constexpr uint64_t PreEvalPawnState = 0x94E;    // confirmed from dump (anim class at 0x94e)
 
 // === UVehicleRiderComponent (TslGame, Inherited 0x200) ===
 constexpr uint64_t SeatIndex = 0x230;
