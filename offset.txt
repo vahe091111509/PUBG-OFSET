@@ -57,7 +57,7 @@ constexpr uint64_t CameraCacheFOV = 0xA2C;
 
 // === AActor (Engine) ===
 constexpr uint64_t RootComponent = 0x308;
-constexpr uint64_t ObjID = 0x28;
+constexpr uint64_t ObjID = 0x20;
 constexpr uint64_t CustomTimeDilation = 0x68;
 constexpr uint64_t ReplicatedMovement = 0xD0;
 
