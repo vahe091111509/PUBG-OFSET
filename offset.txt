@@ -3,9 +3,9 @@
 // ============================================================
 
 // === Core (memory scan) ===
-constexpr uint64_t XenuineDecrypt = 0x107A6828;
+constexpr uint64_t XenuineDecrypt = 0x1079AC28;
 constexpr uint64_t UWorld = 0x1225E938;
-constexpr uint64_t GNames = 0x124EE750;
+constexpr uint64_t GNames = 0x124EE760;
 constexpr uint64_t GNamesPtr = 0x10;
 constexpr uint64_t ChunkSize = 0x3E4C;
 constexpr uint64_t GObjects = 0x1221D570;
@@ -26,8 +26,8 @@ constexpr uint64_t GameState = 0x278;
 constexpr uint64_t TimeSeconds = 0x810;
 
 // === Level ===
-constexpr uint64_t Actors = 0x38;
-constexpr uint64_t ActorsForGC = 0x7D0;
+constexpr uint64_t Actors = 0x138;
+constexpr uint64_t ActorsForGC = 0x38;
 
 // === GameState ===
 constexpr uint64_t PlayerArray = 0x410;
@@ -79,8 +79,8 @@ constexpr uint64_t AnimScriptInstance = 0xE30;
 constexpr uint64_t StaticMesh = 0xAE8;
 constexpr uint64_t bAlwaysCreatePhysicsState = 0x488;
 constexpr uint64_t Eyes = 0x75C;
-constexpr uint64_t LastSubmitTime = 0x758;
-constexpr uint64_t LastRenderTimeOnScreen = 0x75C;
+constexpr uint64_t LastSubmitTime = 0x75C;
+constexpr uint64_t LastRenderTimeOnScreen = 0x760;
 constexpr uint64_t BoneSize = 0xAF0;
 
 // === ATslCharacterBase (TslGame, Inherited 0x930) ===
@@ -97,7 +97,7 @@ constexpr uint64_t InventoryFacade = 0x1728;    // InventoryFacade at -0x1 after
 constexpr uint64_t CharacterState = 0x1020;
 constexpr uint64_t SpectatedCount = 0x113C;     // *6a3d6e0442 at 0x113c (confirmed from dump)
 constexpr uint64_t GroggyHealth = 0x14B0;       // DBNOHealth at 0x14b0 (confirmed from dump)
-constexpr uint64_t LastTeamNum = 0x2A98;        // *f622b3bae5 at 0x2a98 (confirmed from dump)
+constexpr uint64_t LastTeamNum = 0x2A98;        // Team at 0x2a88 + 0x10 = 0x2a98 (confirmed)
 constexpr uint64_t AntiCheatCharacterSyncManager = 0xD28;
 constexpr uint64_t PreEvalPawnState = 0x94E;    // confirmed from dump (anim class at 0x94e)
 
@@ -170,6 +170,8 @@ constexpr uint64_t DroppedItem = 0x458;
 // ADroppedItemGroup (Inherited 0x3f8)
 constexpr uint64_t DroppedItemGroup = 0x1C0;
 constexpr uint64_t DroppedItemGroupUItem = 0x870;
+constexpr uint64_t ItemTable = 0xB0;
+constexpr uint64_t ItemID = 0x244;
 // AItemPackage (Inherited 0x460): Items TArray at 0x578
 constexpr uint64_t ItemPackageItems = 0x578;
 // UItem (Inherited 0x30): StackCount at 0x40
