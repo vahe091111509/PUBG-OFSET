@@ -1,7 +1,7 @@
-    constexpr uint64_t XenuineDecrypt = 0x1079c028;
-    constexpr uint64_t UWorld = 0x1225f938;
-    constexpr uint64_t GNames = 0x124ef760;
-    constexpr uint64_t GObjects = 0x12220570;
+constexpr uint64_t XenuineDecrypt = 0x1079c028;
+constexpr uint64_t UWorld = 0x1225f938;
+constexpr uint64_t GNames = 0x124ef760;
+constexpr uint64_t GObjects = 0x12220570;
 constexpr uint64_t GNamesPtr = 0x10;
 constexpr uint64_t ChunkSize = 0x3E4C;
 
