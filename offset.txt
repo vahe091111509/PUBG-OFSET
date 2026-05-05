@@ -70,7 +70,7 @@
         inline uint64_t LastUpdateVelocity = 0x3E0;
         inline uint64_t LastSubmitTime = 0x758;
         inline uint64_t LastRenderTimeOnScreen = 0x75C;
-        inline uint64_t TeamNumber = 0x7C4;
+        inline uint64_t TeamNumber = 0x754;
         inline uint64_t LastTeamNum = 0x2A98;
         inline uint64_t SpectatedCount = 0x113C;
         inline uint64_t bAlwaysCreatePhysicsState = 0x488;
@@ -138,7 +138,7 @@
         inline uint64_t EquippedWeapons = 0x208;
         inline uint64_t WeaponProcessor = 0x968;
         inline uint64_t CurrentWeaponIndex = 0x319;
-        inline uint64_t WeaponTrajectoryData = 0x11A8;
+        inline uint64_t WeaponTrajectoryData = 0x300;
         inline uint64_t TrajectoryGravityZ = 0x106C;
         inline uint64_t FiringAttachPoint = 0x8C0;
         inline uint64_t ScopingAttachPoint = 0xB20;
@@ -159,7 +159,7 @@
         inline uint64_t PlayerInput = 0x548;
         inline uint64_t InputAxisProperties = 0x138;
         inline uint64_t InputYawScale = 0x64C;
-        inline uint64_t bIsScoping_CP = 0x85D;
+        inline uint64_t bIsScoping_CP = 0x92C;
         inline uint64_t bIsReloading_CP = 0x735;
         inline uint64_t RecoilADSRotation_CP = 0x824;
         inline uint64_t ControlRotation_CP = 0x64C;
