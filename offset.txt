@@ -1,4 +1,4 @@
-//DecryptPtr = 0x7FF73A015740
+DecryptPtr = 0x7FF73A015740
 constexpr uint64_t XenuineDecrypt = 0x107A7828;
 constexpr uint64_t UWorld = 0x1225F938;
 constexpr uint64_t GNames = 0x124EF760;
