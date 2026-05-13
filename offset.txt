@@ -59,10 +59,11 @@
         inline uint64_t Mesh = 0x448;
         inline uint64_t Mesh3P = 0x800;
         inline uint64_t ComponentLocation = 0x330;
+        inline uint64_t ComponentVelocity = 0x340;
         inline uint64_t ComponentToWorld = 0x320;
         inline uint64_t BoneArray = 0x9D0;
         inline uint64_t StaticMesh = 0x9D0;
-        inline uint64_t BoneCount = 0xAF8;
+        inline uint64_t BoneSize = 0xAF8;
         inline uint64_t Eyes = 0x75C;
         inline uint64_t WorldToMap = 0xA04;
         inline uint64_t CharacterState = 0x1020;
@@ -98,28 +99,28 @@
         inline uint64_t EncryptedHealthPrimary = 0xA30;
         inline uint64_t EncryptedHealthFallback = 0xA38;
  
-        inline uint32_t HealthKey0 = 0xCEC7A593;
-        inline uint32_t HealthKey1 = 0x9B63B252;
-        inline uint32_t HealthKey2 = 0xCA2936A5;
-        inline uint32_t HealthKey3 = 0xA738484B;
-        inline uint32_t HealthKey4 = 0xCC911D0A;
-        inline uint32_t HealthKey5 = 0x23DDA185;
-        inline uint32_t HealthKey6 = 0x09454BC8;
-        inline uint32_t HealthKey7 = 0xA521BA21;
-        inline uint32_t HealthKey8 = 0x0BA17A58;
-        inline uint32_t HealthKey9 = 0xB0EFA787;
-        inline uint32_t HealthKey10 = 0xE275B2BA;
-        inline uint32_t HealthKey11 = 0x878ADBD0;
-        inline uint32_t HealthKey12 = 0xBDCC62D5;
-        inline uint32_t HealthKey13 = 0xA7934B07;
-        inline uint32_t HealthKey14 = 0x4B099E38;
-        inline uint32_t HealthKey15 = 0xEEDB2A7D;
+        inline uint32_t Health_keys0 = 0xCEC7A593;
+        inline uint32_t Health_keys1 = 0x9B63B252;
+        inline uint32_t Health_keys2 = 0xCA2936A5;
+        inline uint32_t Health_keys3 = 0xA738484B;
+        inline uint32_t Health_keys4 = 0xCC911D0A;
+        inline uint32_t Health_keys5 = 0x23DDA185;
+        inline uint32_t Health_keys6 = 0x09454BC8;
+        inline uint32_t Health_keys7 = 0xA521BA21;
+        inline uint32_t Health_keys8 = 0x0BA17A58;
+        inline uint32_t Health_keys9 = 0xB0EFA787;
+        inline uint32_t Health_keys10 = 0xE275B2BA;
+        inline uint32_t Health_keys11 = 0x878ADBD0;
+        inline uint32_t Health_keys12 = 0xBDCC62D5;
+        inline uint32_t Health_keys13 = 0xA7934B07;
+        inline uint32_t Health_keys14 = 0x4B099E38;
+        inline uint32_t Health_keys15 = 0xEEDB2A7D;
  
         inline uint32_t HealthKeys[] = {
-            HealthKey0, HealthKey1, HealthKey2, HealthKey3,
-            HealthKey4, HealthKey5, HealthKey6, HealthKey7,
-            HealthKey8, HealthKey9, HealthKey10, HealthKey11,
-            HealthKey12, HealthKey13, HealthKey14, HealthKey15
+            Health_keys0, Health_keys1, Health_keys2, Health_keys3,
+            Health_keys4, Health_keys5, Health_keys6, Health_keys7,
+            Health_keys8, Health_keys9, Health_keys10, Health_keys11,
+            Health_keys12, Health_keys13, Health_keys14, Health_keys15
         };
  
         // --- 8. INVENTORY & STATS ---
@@ -180,6 +181,7 @@
         inline uint64_t ItemID = 0x244;
         inline uint64_t Equipment = 0x408;
         inline uint64_t ItemsArray = 0x4F8;
+        inline uint64_t StackCount = 0x248;
         inline uint64_t DroppedItemGroup = 0x1C0;
         inline uint64_t ItemPackageItems = 0x6D8;
         inline uint64_t DroppedItemGroupUItem = 0x870;
@@ -195,10 +197,13 @@
         inline uint64_t SeatIndex = 0x230;
         inline uint64_t Wheels = 0x328;
         inline uint64_t WheelLocation = 0x100;
+        inline uint64_t WheelOldLocation = 0x110;
+        inline uint64_t WheelVelocity = 0x120;
         inline uint64_t DampingRate = 0x54;
         inline uint64_t ShapeRadius = 0x48;
         inline uint64_t VehicleCommonComponent = 0xB30;
         inline uint64_t FloatingVehicleCommonComponent = 0x4D8;
+        inline uint64_t FloatingComponent = 0x4D8;
         inline uint64_t VehicleFuel = 0x2E0;
         inline uint64_t VehicleFuelMax = 0x2E4;
         inline uint64_t VehicleHealth = 0x2D8;
@@ -208,7 +213,7 @@
         inline uint64_t AnimScriptInstance = 0xE30;
         inline uint64_t PreEvalPawnState = 0x630;
         inline uint64_t AntiCheatCharacterSyncManager = 0xD28;
-        inline uint64_t PhysxSDK = 0x11D936C0;
+        inline uint64_t Physx_SDK = 0x11D936C0;
         inline uint64_t TimeSeconds = 0x9C;
         inline uint64_t TimeTillExplosion = 0x824;
         inline uint64_t ExplodeState = 0x628;
@@ -234,3 +239,4 @@
         inline uint64_t LineTraceSingle = 0x83153C;
         inline uint64_t HOOK = 0x11AE68E8;
         inline uint64_t HOOK_TWO = 0xCFEDBAB;
+
