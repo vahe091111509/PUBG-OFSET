@@ -5,7 +5,7 @@
         inline uint64_t GNamesPtr = 0x10;
         inline uint64_t ChunkSize = 0x3E4C;
  
-        inline uint64_t ObjID = 0x1C;
+        inline uint64_t ObjID = 28;
  
         // --- 2. UNREAL ENGINE CORE ---
         inline uint64_t CurrentLevel = 0x800;
