@@ -5,7 +5,7 @@
         inline uint64_t GNamesPtr = 0x10;
         inline uint64_t ChunkSize = 0x3E4C;
  
-        inline uint64_t ObjID = 0x20;
+        inline uint64_t ObjID = 0x1C;
  
         // --- 2. UNREAL ENGINE CORE ---
         inline uint64_t CurrentLevel = 0x800;
@@ -26,12 +26,12 @@
  
         // --- 3. NAME DECRYPT PARAMS ---
         inline uint64_t DecryptNameIndexRor = 0x1;
-        inline uint64_t DecryptNameIndexXorKey1 = 0x7360F24;
-        inline uint64_t DecryptNameIndexXorKey2 = 0xB621EC05;
-        inline uint64_t DecryptNameIndexXorKey3 = 0x1FF0000;
-        inline uint64_t DecryptNameIndexRval = 0x17;
-        inline uint64_t DecryptNameIndexSval = 0x7;
-        inline uint64_t DecryptNameIndexDval = 0x19;
+        inline uint64_t DecryptNameIndexXorKey1 = 0x221A03AC;
+        inline uint64_t DecryptNameIndexXorKey2 = 0x12082DD7;
+        inline uint64_t DecryptNameIndexXorKey3 = 0x7FFF0000;
+        inline uint64_t DecryptNameIndexRval = 0x11;
+        inline uint64_t DecryptNameIndexSval = 0x1;
+        inline uint64_t DecryptNameIndexDval = 0x1F;
  
         // --- 4. CAMERA & HUD ---
         inline uint64_t ViewTarget = 0x1050;
@@ -221,7 +221,7 @@
         inline uint64_t MortarRotation = 0x520;
         inline uint64_t MortarEntity = 0x108;
         inline uint64_t MapGrid_Map = 0x4A8;
-        inline uint64_t Gender = 0xAC8;
+        inline uint64_t Gender = 0xB48;
         inline uint64_t MouseX = 0x4BF5;
         inline uint64_t MouseY = 0x4BF6;
  
