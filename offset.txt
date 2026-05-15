@@ -1,6 +1,6 @@
-        inline uint64_t XenuineDecrypt = 0x1099FE28;
-        inline uint64_t UWorld = 0x12496C38;
-        inline uint64_t GNames = 0x1272A470;
+        inline uint64_t XenuineDecrypt = 0x109A1328;
+        inline uint64_t UWorld = 0x12498C38;
+        inline uint64_t GNames = 0x1272C470;
         inline uint64_t GObjects = 0x12457870;
         inline uint64_t GNamesPtr = 0x10;
         inline uint64_t ChunkSize = 0x3E4C;
