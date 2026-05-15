@@ -228,8 +228,8 @@
         inline uint64_t AnimScriptInstance = 0xE30;
         inline uint64_t PreEvalPawnState = 0x630;
         inline uint64_t AntiCheatCharacterSyncManager = 0xD28;
-        inline uint64_t Physx_SDK = 0x11D936C0;
-        inline uint64_t PhysxSDK = 0x11D936C0;
+        inline uint64_t Physx_SDK = 0x11DC9948;
+        inline uint64_t PhysxSDK = 0x11DC9948;
         inline uint64_t TimeSeconds = 0x9C;
         inline uint64_t TimeTillExplosion = 0x824;
         inline uint64_t ExplodeState = 0x628;
