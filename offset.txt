@@ -88,16 +88,3 @@ uint64_t UWorld = 0x1249AC38;
 	uint32_t bAlwaysCreatePhysicsState = 0x488;
 }
  
-uint64_t OBJECT_ID = 0X20;
- 
-DWORD DecryptCIndex(DWORD value)
-{
-	return ((((value) ^ 0x7360F24) << 25) | (((value) ^ 0x7360F24u) >> 7) & 0x1FF0000) ^ __ROR4__((value) ^ 0x7360F24, 23) ^ 0xB621EC05;
-}
- 
-uint64_t OBJECT_ID_2 = 0X1C;
- 
-DWORD DecryptCIndex_2(DWORD value)
-{
-	return ((((value) ^ 0x221A03AC) << 31) | (((value) ^ 0x221A03ACu) >> 1) & 0x7FFF0000) ^ __ROR4__((value) ^ 0x221A03AC, 17) ^ 0x12082DD7;
-}
