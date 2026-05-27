@@ -1,8 +1,8 @@
-constexpr uint64_t XenuineDecrypt = 0x109A4428;
+constexpr uint64_t XenuineDecrypt = 0x109A3228;
 constexpr uint64_t SPOOFCALL = 0x22DA695;
 constexpr uint64_t HOOK = 0x11D228F8;
 constexpr uint64_t HOOK_TWO = 0xCF5B65F;
-constexpr uint64_t GNames = 0x12730450;
+constexpr uint64_t GNames = 0x1272E560;
 constexpr uint64_t GNamesPtr = 0x10;
 constexpr uint64_t GObjects = 0x1245D870;
 constexpr uint64_t Unreal_Engine = 0x12498F40;
@@ -31,8 +31,8 @@ constexpr uint64_t DecryptNameIndexSval = 0x7;
 constexpr uint64_t DecryptNameIndexDval = 0x19;
 
 // ==================== World / GameState ====================
-constexpr uint64_t UWorld = 0x1249CC38;
-constexpr uint64_t CurrentLevel = 0x788;
+constexpr uint64_t UWorld = 0x1249AC38;
+constexpr uint64_t CurrentLevel = 0x800;
 constexpr uint64_t Actors = 0x38;
 constexpr uint64_t ActorsForGC = 0x7D0;
 constexpr uint64_t GameInstance = 0x3B0;
@@ -109,12 +109,22 @@ constexpr uint64_t Health4 = 0xA10;
 constexpr uint64_t Health5 = 0xA25;
 constexpr uint64_t Health6 = 0xA20;
 
-constexpr uint32_t HealthXorKeys[16] = {
-0xCEC7A592, 0x9B63B252, 0xCA2936A5, 0x523848B1,
-0x36911D0A, 0x23DDA070, 0x0945B1C8, 0xA521BB21,
-0x0BA07A58, 0xB0EF5287, 0xE27547BB, 0x878ADB2A,
-0xBD3697D5, 0x5293B107, 0xB1099E38, 0xEFDA2A88,
-};
+constexpr uint64_t Health_keys0 = 0xCEC7A592;
+constexpr uint64_t Health_keys1 = 0x9B63B252;
+constexpr uint64_t Health_keys2 = 0xCA2936A5;
+constexpr uint64_t Health_keys3 = 0x523848B1;
+constexpr uint64_t Health_keys4 = 0x36911D0A;
+constexpr uint64_t Health_keys5 = 0x23DDA070;
+constexpr uint64_t Health_keys6 = 0x0945B1C8;
+constexpr uint64_t Health_keys7 = 0xA521BB21;
+constexpr uint64_t Health_keys8 = 0x0BA07A58;
+constexpr uint64_t Health_keys9 = 0xB0EF5287;
+constexpr uint64_t Health_keys10 = 0xE27547BB;
+constexpr uint64_t Health_keys11 = 0x878ADB2A;
+constexpr uint64_t Health_keys12 = 0xBD3697D5;
+constexpr uint64_t Health_keys13 = 0x5293B107;
+constexpr uint64_t Health_keys14 = 0xB1099E38;
+constexpr uint64_t Health_keys15 = 0xEFDA2A88;
 
 // ==================== Animation / Status Flags ====================
 constexpr uint64_t AnimScriptInstance = 0xE30;
