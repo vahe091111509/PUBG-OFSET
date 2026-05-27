@@ -1,4 +1,4 @@
-uint64_t UWorld = 0x1249AC38;
+	uint64_t UWorld = 0x1249AC38;
 	uint64_t Decrypt = 0x109A3228;
  
 	uint64_t GNames = 0x1272E560;
@@ -86,4 +86,3 @@ uint64_t UWorld = 0x1249AC38;
  
 	// Physics
 	uint32_t bAlwaysCreatePhysicsState = 0x488;
-
