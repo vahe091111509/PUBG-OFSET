@@ -182,3 +182,4 @@ StaticSocketName = 0x30
 StaticRelativeScale = 0x50
 StaticRelativeLocation = 0x38
 StaticRelativeRotation = 0x44
+Physx = 0x11DCB948
