@@ -1,64 +1,33 @@
-# User's offsets
+# PUBG DMA Offsets — from reference constexpr (authoritative source)
+# Updated from user-provided original offset list
+
+# === Core / Engine ===
 UWorld = 0x1249AC38
 XenuineDecrypt = 0x109A3228
-GNames = 0x1272E560
-ChunkSize = 0x3E4C
-CurrentLevel = 0x800
-GameInstance = 0x3B0
-LocalPlayer = 0xF0
-Actors = 0x38
-PlayerController = 0x38
-AcknowledgedPawn = 0x4A8
-PlayerCameraManager = 0x4D0
-RootComponent = 0x308
-Mesh = 0x4A0
-StaticMesh = 0xAE8
-ComponentToWorld = 0x320
-ComponentLocation = 0x330
-ComponentVelocity = 0x23C
-CameraCacheFOV = 0xA2C
-CameraCacheLocation = 0xA30
-CameraCacheRotation = 0xA10
-WeaponProcessor = 0x968
-EquippedWeapons = 0x208
-CurrentWeaponIndex = 0x319
-WeaponTrajectoryData = 0x11A8
-TrajectoryConfig = 0x108
-AnimScriptInstance = 0xE30
-ControlRotation_CP = 0x654
-RecoilADSRotation_CP = 0x824
-LeanLeftAlpha_CP = 0x69C
-LeanRightAlpha_CP = 0x6A0
-VehicleRiderComponent = 0x20E0
-LastVehiclePawn = 0x270
-ReplicatedMovement = 0xD0
-SeatIndex = 0x230
-LastSubmitTime = 0x758
-LastRenderTimeOnScreen = 0x75C
-bAlwaysCreatePhysicsState = 0x488
-GroggyHealth = 0x1530
-LastTeamNum = 0x2B18
-CharacterName = 0x1E00
-SpectatedCount = 0x11BC
-
-# Additional from GitHub
 SPOOFCALL = 0x22DA695
 HOOK = 0x11D228F8
 HOOK_TWO = 0xCF5B65F
+GNames = 0x1272E560
 GNamesPtr = 0x10
 GObjects = 0x1245D870
 Unreal_Engine = 0x12498F40
-PhysxSDK = 0x11DCD948
+PhysxSDK = 0x11DCB948
 PhysicsScene = 0x3A0
 mPhysXScene = 0xD0
 rigid_dynamics = 0x3B98
+ElementsPerChunk = 0x3E4C
+ChunkSize = 0x3E4C
 LineTraceSingle = 0xC567C58
+
+# === UObject ===
 UObject_Index = 0x08
 UObject_ClassPrivate = 0x10
 UObject_ObjectFlags = 0x18
 UObject_FName_Number = 0x1C
 UObject_FName_CompIdx = 0x20
 UObject_OuterPrivate = 0x28
+
+# === Name Decryption Keys ===
 DecryptNameIndexRor = 0x1
 DecryptNameIndexXorKey1 = 0x7360F24
 DecryptNameIndexXorKey2 = 0xB621EC05
@@ -66,48 +35,106 @@ DecryptNameIndexXorKey3 = 0x1FF0000
 DecryptNameIndexRval = 0x17
 DecryptNameIndexSval = 0x7
 DecryptNameIndexDval = 0x19
+
+# === World / GameState ===
+CurrentLevel = 0x800
+Actors = 0x38
 ActorsForGC = 0x7D0
+GameInstance = 0x3B0
 GameState = 0x278
 MatchId = 0x518
 TimeSeconds = 0x810
 NumAliveTeams = 0x480
+
+# === Local Player ===
+LocalPlayer = 0xF0
+LocalPlayers = 0xF0
+PlayerController = 0x38
+AcknowledgedPawn = 0x4A8
 PlayerInput = 0x548
 InputAxisProperties = 0x138
 InputYawScale = 0x64C
 MouseX = 0x4C8F
 MouseY = 0x4C90
+
+# === Camera / View ===
+PlayerCameraManager = 0x4D0
 ViewTarget = 0x1050
+CameraCacheFOV = 0xA2C
+CameraCacheLocation = 0xA30
+CameraCacheRotation = 0xA10
+
+# === Character / Actor ===
 ObjID = 0x20
+RootComponent = 0x308
+Mesh = 0x4A0
+StaticMesh = 0xAE8
 Mesh3P = 0x800
+ComponentLocation = 0x330
+ComponentVelocity = 0x23C
+ComponentToWorld = 0x320
 Eyes = 0x75C
 CharacterState = 0x10A0
+CharacterName = 0x1E00
 Gender = 0xB48
 CharacterMovement = 0x490
 LastUpdateVelocity = 0x3E0
+bAlwaysCreatePhysicsState = 0x488
 AntiCheatCharacterSyncManager = 0xD38
+
+# === Rendering ===
+LastSubmitTime = 0x758
+LastRenderTimeOnScreen = 0x75C
+
+# === Player State / Info ===
 PlayerArray = 0x410
 PlayerState = 0x418
+AccountID = 0x810
 AccountId = 0x810
 PlayerName = 0x420
 PlayerStatusType = 0x468
-PlayerStatistics = 0x430
+PlayerStatistics = 0xA10
 PubgIdData = 0xCB8
 CharacterClanInfo = 0x838
 SquadMemberIndex = 0xA1C
 TeamNumber = 0x7C4
+LastTeamNum = 0x2B18
 DamageDealtOnEnemy = 0x804
+SpectatedCount = 0x11BC
 Ping = 0x3F8
 PartnerLevel = 0x716
-SurvivalTier = 0xCD8
-SurvivalLevel = 0xCDC
+SurvivalTier = 0xCC0
+SurvivalLevel = 0xCC4
 HealthFlag = 0x3B9
+
+# === Health System ===
+GroggyHealth = 0x1530
 Health1 = 0xA3C
 Health2 = 0xA38
 Health3 = 0xA24
 Health4 = 0xA10
 Health5 = 0xA25
 Health6 = 0xA20
-bIsDBNO_CP = 0x931
+
+Health_keys0 = 0xCEC7A592
+Health_keys1 = 0x9B63B252
+Health_keys2 = 0xCA2936A5
+Health_keys3 = 0x523848B1
+Health_keys4 = 0x36911D0A
+Health_keys5 = 0x23DDA070
+Health_keys6 = 0x0945B1C8
+Health_keys7 = 0xA521BB21
+Health_keys8 = 0x0BA07A58
+Health_keys9 = 0xB0EF5287
+Health_keys10 = 0xE27547BB
+Health_keys11 = 0x878ADB2A
+Health_keys12 = 0xBD3697D5
+Health_keys13 = 0x5293B107
+Health_keys14 = 0xB1099E38
+Health_keys15 = 0xEFDA2A88
+
+# === Animation / Status Flags ===
+AnimScriptInstance = 0xE30
 PreEvalPawnState = 0x638
 bIsInVehicle_CP = 0x954
 bIsParachuting_CP = 0x92E
@@ -117,9 +144,21 @@ bIsReviving_CP = 0x932
 bIsSwimming_CP = 0x935
 bIsScoping_CP = 0x85D
 bIsReloading_CP = 0x73D
+bIsDBNO_CP = 0x931
+ControlRotation_CP = 0x654
+RecoilADSRotation_CP = 0x824
+LeanLeftAlpha_CP = 0x69C
+LeanRightAlpha_CP = 0x6A0
 AimOffsets = 0x1B48
+
+# === Weapons / Combat ===
+WeaponProcessor = 0x968
+EquippedWeapons = 0x208
+CurrentWeaponIndex = 0x319
 CurrentAmmoData = 0xE68
 WeaponConfig_WeaponClass = 0x798
+WeaponTrajectoryData = 0x11A8
+TrajectoryConfig = 0x108
 TrajectoryGravityZ = 0x10EC
 BallisticCurve = 0x28
 FloatCurves = 0x38
@@ -134,6 +173,14 @@ VerticalRecovery = 0x10D8
 RecoilValueVector = 0x1198
 TimeTillExplosion = 0x824
 ExplodeState = 0x628
+
+# === Inventory / Items ===
+InventoryFacade = 0x17A8
+Inventory = 0x400
+InventoryItems = 0x690
+InventoryItemCount = 0x698
+InventoryItemTagItemCount = 0x40
+StackCount = 0x40
 Equipment = 0x408
 ItemsArray = 0x4F8
 AttachedItems = 0x858
@@ -146,7 +193,13 @@ DroppedItemGroupUItem = 0x870
 ItemPackageItems = 0x578
 Durability = 0x1E4
 DurabilityMax = 0x1E0
+
+# === Vehicles ===
+VehicleRiderComponent = 0x20E0
+LastVehiclePawn = 0x270
+SeatIndex = 0x230
 VehicleMovement = 0x468
+ReplicatedMovement = 0xD0
 VehicleCommonComponent = 0xB30
 FloatingVehicleCommonComponent = 0x4D8
 VehicleFuel = 0x2E0
@@ -157,6 +210,8 @@ Wheels = 0x328
 WheelLocation = 0x100
 DampingRate = 0x54
 ShapeRadius = 0x48
+
+# === Environment / Map ===
 WorldToMap = 0xA04
 SafetyZonePosition = 0xB0
 SafetyZoneRadius = 0xBC
@@ -168,6 +223,8 @@ Minimap = 0x480
 CurrentMinimapViewScale1D = 0x4A4
 LastMinimapPos = 0x4B8
 SelectMinimapSizeIndex = 0x5C8
+
+# === UI / Misc / Static Sockets ===
 MyHUD = 0x4C8
 BlockInputWidgetList = 0x5B0
 bShowMouseCursor = 0x658
@@ -178,9 +235,15 @@ Slot = 0x38
 WidgetStateMap = 0x538
 FeatureRepObject = 0xCF0
 RecentlyRendered = 0xBD8
-Physx = 0x11DCB948
 StaticSockets = 0xC8
 StaticSocketName = 0x30
 StaticRelativeScale = 0x50
 StaticRelativeLocation = 0x38
 StaticRelativeRotation = 0x44
+
+# === USkeleton/USkeletalMesh (from dump) ===
+Skeleton = 0x50
+SkeletalMesh = 0xAD8
+SkeletalSockets = 0x198
+SkeletalSocketName = 0x30
+DormantCharacterClientList = 0x48
