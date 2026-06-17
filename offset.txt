@@ -1,6 +1,6 @@
 // === Core / Engine ===
 constexpr uint64_t UWorld = 0x1249AC38;
-constexpr uint64_t XenuineDecrypt = 0x10ED6528;
+constexpr uint64_t XenuineDecrypt = 0x109A3228 ;   //0x10ED6528
 constexpr uint64_t SPOOFCALL = 0x22DA695; // старый
 constexpr uint64_t HOOK = 0x11D228F8; // старый
 constexpr uint64_t HOOK_TWO = 0xCF5B65F; // старый
