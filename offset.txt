@@ -12,7 +12,7 @@ constexpr uint64_t PhysxSDK = 0x11DCB948; // старый
 constexpr uint64_t PhysicsScene = 0x3A0; // старый
 constexpr uint64_t mPhysXScene = 0xD0; // старый
 constexpr uint64_t rigid_dynamics = 0x3B98; // старый
-constexpr uint64_t ElementsPerChunk = 0x3E4C; // старый
+constexpr uint64_t ElementsPerChunk = 0x3E4C;
 constexpr uint64_t ChunkSize = 0x3E4C;
 constexpr uint64_t LineTraceSingle = 0xC567C58; // старый
 
@@ -73,7 +73,7 @@ constexpr uint64_t ComponentToWorld = 0x320;
 constexpr uint64_t Eyes = 0x75C; // старый
 constexpr uint64_t CharacterState = 0x10A0; // старый
 constexpr uint64_t CharacterName = 0x1E00;
-constexpr uint64_t Gender = 0xB48; // старый
+constexpr uint64_t Gender = 0xB48; 
 constexpr uint64_t CharacterMovement = 0x490; // старый
 constexpr uint64_t LastUpdateVelocity = 0x3E0; // старый
 constexpr uint64_t bAlwaysCreatePhysicsState = 0x488;
@@ -170,6 +170,7 @@ constexpr uint64_t VerticalRecovery = 0x10D8; // старый
 constexpr uint64_t RecoilValueVector = 0x1198; // старый
 constexpr uint64_t TimeTillExplosion = 0x824; // старый
 constexpr uint64_t ExplodeState = 0x628; // старый
+constexpr uint64_t InvertedRecoilVectorOfEquippedWeapon = 0x11A8;
 
 // === Inventory / Items ===
 constexpr uint64_t InventoryFacade = 0x17A8; // старый
@@ -192,11 +193,11 @@ constexpr uint64_t Durability = 0x1E4; // старый
 constexpr uint64_t DurabilityMax = 0x1E0; // старый
 
 // === Vehicles ===
-constexpr uint64_t VehicleRiderComponent = 0x20E0; // старый
-constexpr uint64_t LastVehiclePawn = 0x270; // старый
-constexpr uint64_t SeatIndex = 0x230; // старый
+constexpr uint64_t VehicleRiderComponent = 0x20E0;
+constexpr uint64_t LastVehiclePawn = 0x270;
+constexpr uint64_t SeatIndex = 0x230;
 constexpr uint64_t VehicleMovement = 0x468; // старый
-constexpr uint64_t ReplicatedMovement = 0xD0; // старый
+constexpr uint64_t ReplicatedMovement = 0xD0;
 constexpr uint64_t VehicleCommonComponent = 0xB30; // старый
 constexpr uint64_t FloatingVehicleCommonComponent = 0x4D8; // старый
 constexpr uint64_t VehicleFuel = 0x2E0; // старый
@@ -218,4 +219,29 @@ constexpr uint64_t TrainingMapGrid = 0x5B0; // старый
 constexpr uint64_t MapGrid_Map = 0x4A8; // старый
 constexpr uint64_t Minimap = 0x480; // старый
 constexpr uint64_t CurrentMinimapViewScale1D = 0x4A4; // старый
-constexpr uint64_t Last
+constexpr uint64_t LastMinimapPos = 0x4B8; // старый
+constexpr uint64_t SelectMinimapSizeIndex = 0x5C8; // старый
+
+// === UI / Misc / Static Sockets ===
+constexpr uint64_t MyHUD = 0x4C8; // старый
+constexpr uint64_t BlockInputWidgetList = 0x5B0; // старый
+constexpr uint64_t bShowMouseCursor = 0x658; // старый
+constexpr uint64_t LayoutData = 0x40; // старый
+constexpr uint64_t Alignment = 0x20; // старый
+constexpr uint64_t Visibility = 0xA9; // старый
+constexpr uint64_t Slot = 0x38; // старый
+constexpr uint64_t WidgetStateMap = 0x538; // старый
+constexpr uint64_t FeatureRepObject = 0xCF0; // старый
+constexpr uint64_t RecentlyRendered = 0xBD8; // старый
+constexpr uint64_t StaticSockets = 0xC8; // старый
+constexpr uint64_t StaticSocketName = 0x30; // старый
+constexpr uint64_t StaticRelativeScale = 0x50; // старый
+constexpr uint64_t StaticRelativeLocation = 0x38; // старый
+constexpr uint64_t StaticRelativeRotation = 0x44; // старый
+
+// === USkeleton/USkeletalMesh ===
+constexpr uint64_t Skeleton = 0x50; // старый
+constexpr uint64_t SkeletalMesh = 0xAD8; // старый
+constexpr uint64_t SkeletalSockets = 0x198; // старый
+constexpr uint64_t SkeletalSocketName = 0x30; // старый
+constexpr uint64_t DormantCharacterClientList = 0x48; // старый
