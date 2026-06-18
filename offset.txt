@@ -87,4 +87,3 @@ uint64_t UWorld = 0x12AE0908;
  
 	// Physics
 	uint32_t bAlwaysCreatePhysicsState = 0x488;
-}
