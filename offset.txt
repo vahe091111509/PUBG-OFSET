@@ -32,7 +32,16 @@ constexpr uint64_t PlayerName = 0x420;
  
  
 constexpr uint64_t ObjID = 0x20;
+
+constexpr uint64_t DecryptNameIndexRor = 0x1 ;    
+constexpr uint64_t DecryptNameIndexXorKey1 = 0x7360F24 ;    
+constexpr uint64_t DecryptNameIndexXorKey2 = 0xB621EC05 ;    
+constexpr uint64_t DecryptNameIndexXorKey3 = 0x1FF0000 ;    
+constexpr uint64_t DecryptNameIndexRval = 0x17 ;    
+constexpr uint64_t DecryptNameIndexSval = 0x7 ;    
+constexpr uint64_t DecryptNameIndexDval = 0x19 ;    
  
+
 constexpr uint64_t WeaponProcessor = 0x968;
 constexpr uint64_t EquippedWeapons = 0x208;
 constexpr uint64_t CurrentWeaponIndex = 0x319;
