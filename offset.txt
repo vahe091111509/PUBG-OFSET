@@ -182,7 +182,9 @@ Unreal_Engine = 0x1225BC50;
 CurrentMinimapViewScale1D = 0x4A4;
 LastMinimapPos = 0x4B8;
 Minimap = 0x480;
- 
+
+CharacterState = 0x10A0;
+
 TrajectoryGravityZ = 0x10EC;
 GameState = 0x278;
 FeatureRepObject = 0xCF0;
