@@ -1,3 +1,4 @@
+Decrypt = 0x10ea8d28
 XenuineDecrypt = 0x10EA8D28;
 UWorld = 0x12AAFD88;
 GNames = 0x12D3B030;
