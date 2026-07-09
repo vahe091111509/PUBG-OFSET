@@ -1,45 +1,43 @@
-XenuineDecrypt = 0x10D3A628;
-UWorld = 0x1283F488;
-GNames = 0x12ACA740;
-GNamesPtr = 0x10;
-ChunkSize = 0x418C;
-GObjects = 0x127FFEE0;
-CurrentLevel = 0x9B8;
-Actors = 0xF8;
-ActorsForGC = 0x1290;
-GameInstance = 0x3E0;
-GameState = 0x930;
-LocalPlayer = 0x78;
+XenuineDecrypt = 0x11503928;
+UWorld = 0x130C7B08;
+GNames = 0x13352CA0;
+GNamesPtr = 0x0;
+ChunkSize = 0x3E88;
+CurrentLevel = 0x2B8;
+Actors = 0x198;
+GameInstance = 0xA0;
+GameState = 0x1E0;
+LocalPlayer = 0x48;
 PlayerController = 0x38;
 AcknowledgedPawn = 0x4B0;
 PlayerCameraManager = 0x4D8;
 
-ObjID = 0x14;
+ObjID = 0x24;
 DecryptNameIndexRor = 0x1;
-DecryptNameIndexXorKey1 = 0x673AE3D2;
-DecryptNameIndexXorKey2 = 0xAE4AEBD1;
-DecryptNameIndexXorKey3 = 0x1FF0000;
-DecryptNameIndexRval = 0x1F;
-DecryptNameIndexSval = 0xF;
-DecryptNameIndexDval = 0x17;
+DecryptNameIndexXorKey1 = 0x60C75105;
+DecryptNameIndexXorKey2 = 0xBB4741B4;
+DecryptNameIndexXorKey3 = 0x1F0000;
+DecryptNameIndexRval = 0x1B;
+DecryptNameIndexSval = 0x10;
+DecryptNameIndexDval = 0x15;
 
-ViewTarget = 0x1070;
-CameraCacheLocation = 0x9F8;
-CameraCacheRotation = 0x45C;
-CameraCacheFOV = 0x454;
+ViewTarget = 0x440;
+CameraCacheLocation = 0x1040;
+CameraCacheRotation = 0x15E0;
+CameraCacheFOV = 0x104C;
 
-LastTeamNum = 0x1088;
-TeamNumber = 0x6C8;
+LastTeamNum = 0x1A80;
+TeamNumber = 0x820;
 
 MyHUD = 0x4D0;
 BlockInputWidgetList = 0x5C0;
 bShowMouseCursor = 0x660;
-ComponentLocation = 0x360;
-ComponentToWorld = 0x350;
-CharacterState = 0x1E40;
-CharacterName = 0x1028;
-CharacterMovement = 0x4D0;
-WorldToMap = 0x918;
+ComponentLocation = 0x340;
+ComponentToWorld = 0x330;
+CharacterState = 0x2588;
+CharacterName = 0x1188;
+CharacterMovement = 0x520;
+WorldToMap = 0x870;
 LayoutData = 0x40;
 Offsets = 0x0;
 Alignment = 0x20;
@@ -53,11 +51,11 @@ SafetyZonePosition = 0xB0;
 SafetyZoneRadius = 0xBC;
 BlueZoneRadius = 0xCC;
 BlueZonePosition = 0xC0;
-NumAliveTeams = 0x4B4;
+NumAliveTeams = 0x498;
 
-HeaFlag = 0x318;
-Health1 = 0x9A8;
-Health2 = 0xA50;
+HeaFlag = 0x22C;
+Health1 = 0x964;
+Health2 = 0x960;
 Health3 = 0x984;
 Health4 = 0x970;
 Health5 = 0x985;
@@ -78,37 +76,34 @@ Health_keys12 = 0xBD60BBD5;
 Health_keys13 = 0x7E93E707;
 Health_keys14 = 0xE7099E38;
 Health_keys15 = 0xECD92AA4;
-GroggyHealth = 0x1328;
-BlueBlockerGaugeTotalMax = 0x10;
+GroggyHealth = 0x1F1C;
 
 PlayerArray = 0x420;
-AccountId = 0x4D8;
-PlayerName = 0x428;
-PlayerStatusType = 0x408;
-SquadMemberIndex = 0x4A8;
-PlayerState = 0x430;
-PlayerStatistics = 0xA94;
-DamageDealtOnEnemy = 0x930;
-SpectatedCount = 0x1824;
-ping = 0x448;
-MatchId = 0x550;
-CapsuleComponent = 0x300;
-CustomTimeDilation = 0x1F0;
+AccountId = 0x590;
+PlayerName = 0x410;
+PlayerStatusType = 0x47C;
+SquadMemberIndex = 0x8EC;
+PlayerState = 0x428;
+PlayerStatistics = 0x8C0;
+DamageDealtOnEnemy = 0x5A8;
+SpectatedCount = 0x1864;
+MatchId = 0x478;
+Ping = 0x448;
 
-PartnerLevel = 0x6B6;
-SurvivalTier = 0xCD8;
-SurvivalLevel = 0xCDC;
-PubgIdData = 0xCD0;
+PartnerLevel = 0x8D2;
+SurvivalTier = 0xCE8;
+SurvivalLevel = 0xCEC;
+PubgIdData = 0xCE0;
 
-CharacterClanInfo = 0x938;
+CharacterClanInfo = 0x848;
 
 EquippedWeapons = 0x208;
-WeaponProcessor = 0x968;
+WeaponProcessor = 0x998;
 CurrentWeaponIndex = 0x319;
-WeaponTrajectoryData = 0x1200;
-TrajectoryGravityZ = 0x3F;
+WeaponTrajectoryData = 0x11E0;
+TrajectoryGravityZ = 0x1168;
 FiringAttachPoint = 0x8D0;
-ScopingAttachPoint = 0xE58;
+ScopingAttachPoint = 0xDE0;
 TrajectoryConfig = 0x108;
 BallisticCurve = 0x28;
 FloatCurves = 0x38;
@@ -118,22 +113,22 @@ Keys = 0x60;
 
 AttachedStaticComponentMap = 0x1508;
 
-WeaponConfig_WeaponClass = 0x790;
-ElapsedCookingTime = 0xB18;
+WeaponConfig_WeaponClass = 0x639;
+ElapsedCookingTime = 0xB14;
 
 PlayerInput = 0x550;
 InputAxisProperties = 0x138;
 
 LastUpdateVelocity = 0x3E0;
-Mesh = 0x768;
+Mesh = 0x470;
 
-RootComponent = 0x1A0;
-StaticMesh = 0xAE8;
-Eyes = 0x75C;
+RootComponent = 0x370;
+StaticMesh = 0xAF8;
+Eyes = 0xBD8;
 bAlwaysCreatePhysicsState = 0x488;
 
 VehicleMovement = 0x478;
-VehicleRiderComponent = 0x2050;
+VehicleRiderComponent = 0x2120;
 ReplicatedMovement = 0x78;
 LastVehiclePawn = 0x270;
 SeatIndex = 0x230;
@@ -143,18 +138,22 @@ WheelLocation = 0x100;
 DampingRate = 0x54;
 ShapeRadius = 0x48;
 
-DroppedItemGroup = 0x108;
+DroppedItemGroup = 0x230;
 ItemPackageItems = 0x588;
 DroppedItemGroupUItem = 0x870;
 
 AttachedItems = 0x868;
 WeaponAttachmentData = 0x128;
 ItemTable = 0xB0;
-ItemID = 0x244;
+ItemID = 0x240;
 DroppedItem = 0x468;
 
 AnimScriptInstance = 0xE30;
-PreEvalPawnState = 0x638;
+PreEvalPawnState = 0xB30;
+
+LeanLeftAlpha_CP = 0x69C;
+LeanRightAlpha_CP = 0x6A0;
+CurrentAmmoData = 0xFE4;
 
 bIsInVehicle_CP = 0x63C;
 bIsParachuting_CP = 0x92E;
@@ -162,12 +161,10 @@ bIsFreefalling_CP = 0x92D;
 bEmergencyPickup_Flying_CP = 0x92F;
 bIsReviving_CP = 0x932;
 bIsSwimming_CP = 0x935;
-
-VTable = 0xA58;
+bIsDBNO = 0x931;
+bIsDead = 0x3515;
 bIsDBNO_CP = 0x931;
-bIsDBNO0 = 0x3556;
-bIsDBNO1 = 0x3554;
-bIsDBNO2 = 0x3555;
+
 bIsScoping_CP = 0x85D;
 bIsPreparingThrow_CP = 0x540;
 bIsThrowing_CP = 0x938;
@@ -175,9 +172,6 @@ bIsFlashed_CP = 0x63F;
 bIsReloading_CP = 0x73D;
 RecoilADSRotation_CP = 0x824;
 ControlRotation_CP = 0x654;
-LeanLeftAlpha_CP = 0x69C;
-LeanRightAlpha_CP = 0x6A0;
-CurrentAmmoData = 0xDA8;
 
 StaticSockets = 0xC8;
 StaticSocketName = 0x30;
@@ -187,55 +181,43 @@ StaticRelativeRotation = 0x44;
 
 InputYawScale = 0x654;
 
-AimOffsets = 0x1AB8;
+AimOffsets = 0x1C50;
 
-AntiCheatCharacterSyncManager = 0xDA0;
+AntiCheatCharacterSyncManager = 0x1320;
 
-TimeSeconds = 0xAB8;
+TimeSeconds = 0xA70;
 TimeTillExplosion = 0x834;
 ExplodeState = 0x638;
 TrainingMapGrid = 0x5B0;
-RecentlyRendered = 0xBD8;
-MortarRotation = 0x530;
-MortarLocation = 0xB0;
 
-MapGrid_Map = 0x4A8;
+MapGrid_Map = 0x300;
 Gender = 0xB48;
 
 MouseX = 0x4D81;
 MouseY = 0x4D82;
 
-LineTraceSingle = 0xDF90CC;
-HOOK = 0x121BA280;
-HOOK_TWO = 0xA9DA06;
+PhysxSDK = 0x12A385C8;
 
-InventoryFacade = 0x1290;
-Inventory = 0x428;
-InventoryItems = 0x6A0;
-InventoryItemCount = 0x6A8;
+InventoryFacade = 0x1630;
+Inventory = 0x478;
+InventoryItems = 0x608;
+InventoryItemCount = 0x610;
 InventoryItemTagItemCount = 0x40;
 
-Equipment = 0x410;
+Equipment = 0x420;
 ItemsArray = 0x508;
 Durability = 0x1E4;
 Durabilitymax = 0x1E0;
 
 VehicleCommonComponent = 0xB40;
-FloatingVehicleCommonComponent = 0x4E8;
+FloatingComponent = 0x4E8;
 VehicleFuel = 0x2E0;
 VehicleFuelMax = 0x2E4;
 VehicleHealth = 0x2D8;
 VehicleHealthMax = 0x2DC;
 
-PhysxSDK = 0x12270548;
-Physx_sdk = 0x12270548;
-PhysicsScene = 0x9D0;
-mPhysXScene = 0xD0;
-rigid_dynamics = 0x3B98;
-Unreal_Engine = 0x1283B770;
+MortarLocation = 0xB0;
+MortarRotation = 0x530;
 
-CurrentMinimapViewScale1D = 0x4A4;
-LastMinimapPos = 0x4B8;
-Minimap = 0x480;
-RecoilValueVector = 0x11D8;
-VerticalRecovery = 0x1148;
+VerticalRecovery = 0x1188;
+RecoilValueVector = 0x110C;
