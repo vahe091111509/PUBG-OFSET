@@ -1,223 +1,254 @@
-XenuineDecrypt = 0x11503928;
-UWorld = 0x130C7B08;
-GNames = 0x13352CA0;
-GNamesPtr = 0x0;
-ChunkSize = 0x3E88;
-CurrentLevel = 0x2B8;
-Actors = 0x198;
-GameInstance = 0xA0;
-GameState = 0x1E0;
-LocalPlayer = 0x48;
-PlayerController = 0x38;
-AcknowledgedPawn = 0x4B0;
-PlayerCameraManager = 0x4D8;
+We shouldn't just take; we should also share. I’m sharing the results of several hours of work with everyone，these offsets all working for me.
+GameData.Offset["UWorld"] = 0x126AE4A8;
+GameData.Offset["XenuineDecrypt"] = 0x10CF1828;
+GameData.Offset["GNames"] = 0x12937030;
+GameData.Offset["GObjects"] = 0x127FFEE0;
+GameData.Offset["ChunkSize"] = 0x3F30;
+GameData.Offset["ObjID"] = 0x14;
+GameData.Offset["ObjID2"] = 0x1C;
+GameData.Offset["GNamesPtr"] = 0x10;
+GameData.Offset["DecryptNameIndexRor"] = 0x1;
+GameData.Offset["DecryptNameIndexXorKey1"] = 0x2CC4983F;
+GameData.Offset["DecryptNameIndexXorKey2"] = 0x90AD748F;
+GameData.Offset["DecryptNameIndexXorKey3"] = 0x3FF0000;
+GameData.Offset["DecryptNameIndexRval"] = 0x16;
+GameData.Offset["DecryptNameIndexSval"] = 0x1A;
+GameData.Offset["DecryptNameIndexDval"] = 0x6;
 
-ObjID = 0x24;
-DecryptNameIndexRor = 0x1;
-DecryptNameIndexXorKey1 = 0x60C75105;
-DecryptNameIndexXorKey2 = 0xBB4741B4;
-DecryptNameIndexXorKey3 = 0x1F0000;
-DecryptNameIndexRval = 0x1B;
-DecryptNameIndexSval = 0x10;
-DecryptNameIndexDval = 0x15;
+// ===== 2. 世界/关卡偏移 =====
+GameData.Offset["GameInstance"] = 0x2A0;
+GameData.Offset["LocalPlayer"] = 0x58;
+GameData.Offset["Actors"] = 0x80;
+GameData.Offset["CurrentLevel"] = 0x9A0;
+GameData.Offset["ActorsForGC"] = 0x1290;
+GameData.Offset["GameState"] = 0x168;
+GameData.Offset["GameModeGameState"] = 0;
 
-ViewTarget = 0x440;
-CameraCacheLocation = 0x1040;
-CameraCacheRotation = 0x15E0;
-CameraCacheFOV = 0x104C;
+// ===== 3. 玩家控制器/Pawn =====
+GameData.Offset["PlayerController"] = 0x38;
+GameData.Offset["AcknowledgedPawn"] = 0x4C8;
+GameData.Offset["PlayerCameraManager"] = 0x4F0;
+GameData.Offset["RootComponent"] = 0x3C0;
+GameData.Offset["Mesh"] = 0x770;
+GameData.Offset["StaticMesh"] = 0xAE8;
+GameData.Offset["ComponentToWorld"] = 0x330;
+GameData.Offset["ComponentLocation"] = 0x340;
+GameData.Offset["ComponentVelocity"] = 0x278;
+GameData.Offset["bAlwaysCreatePhysicsState"] = 0x488;
+GameData.Offset["CapsuleComponent"] = 0x300;
+GameData.Offset["CustomTimeDilation"] = 0x1F0;
+GameData.Offset["Eyes"] = 0x75C;
 
-LastTeamNum = 0x1A80;
-TeamNumber = 0x820;
+// ===== 4. 玩家属性 =====
+GameData.Offset["GroggyHealth"] = 0x1738;
+GameData.Offset["LastTeamNum"] = 0x19B0;
+GameData.Offset["TeamNumber"] = 0x688;
+GameData.Offset["CharacterName"] = 0x1E68;
+GameData.Offset["CharacterState"] = 0x1E58;
+GameData.Offset["CharacterMovement"] = 0x4D0;
+GameData.Offset["SpectatedCount"] = 0x154C;
+GameData.Offset["Gender"] = 0xB58;
+GameData.Offset["IsAlive"] = 0x1738;
+GameData.Offset["AimOffsets"] = 0x1C38;
 
-MyHUD = 0x4D0;
-BlockInputWidgetList = 0x5C0;
-bShowMouseCursor = 0x660;
-ComponentLocation = 0x340;
-ComponentToWorld = 0x330;
-CharacterState = 0x2588;
-CharacterName = 0x1188;
-CharacterMovement = 0x520;
-WorldToMap = 0x870;
-LayoutData = 0x40;
-Offsets = 0x0;
-Alignment = 0x20;
-Visibility = 0xA9;
-SelectMinimapSizeIndex = 0x5C8;
-Slot = 0x38;
-WidgetStateMap = 0x548;
+// 血量偏移
+GameData.Offset["Health"] = 0xA30;
+GameData.Offset["bEncryptedHealth"] = 0xA45;
+GameData.Offset["EncryptedHealthOffset"] = 0xA44;
+GameData.Offset["DecryptedHealthOffset"] = 0xA40;
+GameData.Offset["HeaFlag"] = 0x378;
+GameData.Offset["Health1"] = 0xA48;
+GameData.Offset["Health2"] = 0xA78;
+GameData.Offset["Health3"] = 0xA44;
+GameData.Offset["Health4"] = 0xA30;
+GameData.Offset["Health5"] = 0xA45;
+GameData.Offset["Health6"] = 0xA40;
+GameData.Offset["DecryptedHealthOffsets0"] = 0xCEC7A590;
+GameData.Offset["DecryptedHealthOffsets1"] = 0x9B63B26A;
+GameData.Offset["DecryptedHealthOffsets2"] = 0xCA150EA5;
+GameData.Offset["DecryptedHealthOffsets3"] = 0x6A38488D;
+GameData.Offset["DecryptedHealthOffsets4"] = 0x0A911D0A;
+GameData.Offset["DecryptedHealthOffsets5"] = 0x23DDA248;
+GameData.Offset["DecryptedHealthOffsets6"] = 0x09458DC8;
+GameData.Offset["DecryptedHealthOffsets7"] = 0xA521B921;
+GameData.Offset["DecryptedHealthOffsets8"] = 0x0BA27A58;
+GameData.Offset["DecryptedHealthOffsets9"] = 0xB0EF6A87;
+GameData.Offset["DecryptedHealthOffsets10"] = 0xE2757FB9;
+GameData.Offset["DecryptedHealthOffsets11"] = 0x878ADB16;
+GameData.Offset["DecryptedHealthOffsets12"] = 0xBD0AAFD5;
+GameData.Offset["DecryptedHealthOffsets13"] = 0x6A938D07;
+GameData.Offset["DecryptedHealthOffsets14"] = 0x8D099E38;
+GameData.Offset["DecryptedHealthOffsets15"] = 0xEDD82AB0;
 
-FeatureRepObject = 0xCF0;
-SafetyZonePosition = 0xB0;
-SafetyZoneRadius = 0xBC;
-BlueZoneRadius = 0xCC;
-BlueZonePosition = 0xC0;
-NumAliveTeams = 0x498;
+// ===== 5. 相机 =====
+GameData.Offset["CameraCacheFOV"] = 0x1600;
+GameData.Offset["CameraCacheLocation"] = 0x1628;
+GameData.Offset["CameraCacheRotation"] = 0x1618;
+GameData.Offset["ViewTarget"] = 0x1640;
 
-HeaFlag = 0x22C;
-Health1 = 0x964;
-Health2 = 0x960;
-Health3 = 0x984;
-Health4 = 0x970;
-Health5 = 0x985;
-Health6 = 0x980;
-Health_keys0 = 0xCEC7A591;
-Health_keys1 = 0x9B63B27E;
-Health_keys2 = 0xCA7F1AA5;
-Health_keys3 = 0x7E3848E7;
-Health_keys4 = 0x60911D0A;
-Health_keys5 = 0x23DDA35C;
-Health_keys6 = 0x945E7C8;
-Health_keys7 = 0xA521B821;
-Health_keys8 = 0xBA37A58;
-Health_keys9 = 0xB0EF7E87;
-Health_keys10 = 0xE2756BB8;
-Health_keys11 = 0x878ADB7C;
-Health_keys12 = 0xBD60BBD5;
-Health_keys13 = 0x7E93E707;
-Health_keys14 = 0xE7099E38;
-Health_keys15 = 0xECD92AA4;
-GroggyHealth = 0x1F1C;
+// ===== 6. 武器 =====
+GameData.Offset["WeaponProcessor"] = 0xA70;
+GameData.Offset["EquippedWeapons"] = 0x208;
+GameData.Offset["CurrentWeaponIndex"] = 0x319;
+GameData.Offset["WeaponTrajectoryData"] = 0x1248;
+GameData.Offset["TrajectoryConfig"] = 0x108;
+GameData.Offset["TrajectoryGravityZ"] = 0x1164;
+GameData.Offset["InvertedRecoilVector"] = 0x11D8;
+GameData.Offset["RecoilValueVector"] = 0x11D8;
+GameData.Offset["VerticalRecovery"] = 0x1210;
+GameData.Offset["FiringAttachPoint"] = 0x8F0;
+GameData.Offset["ScopingAttachPoint"] = 0xE98;
+GameData.Offset["BallisticCurve"] = 0x28;
+GameData.Offset["FloatCurves"] = 0x38;
+GameData.Offset["Mesh3P"] = 0x830;
+GameData.Offset["Keys"] = 0x60;
+GameData.Offset["AttachedStaticComponentMap"] = 0x1508;
+GameData.Offset["WeaponConfig_WeaponClass"] = 0x651;
+GameData.Offset["ElapsedCookingTime"] = 0xC88;
+GameData.Offset["CurrentAmmoData"] = 0x10D8;
+GameData.Offset["AttachedItems"] = 0x888;
+GameData.Offset["WeaponAttachmentData"] = 0x128;
 
-PlayerArray = 0x420;
-AccountId = 0x590;
-PlayerName = 0x410;
-PlayerStatusType = 0x47C;
-SquadMemberIndex = 0x8EC;
-PlayerState = 0x428;
-PlayerStatistics = 0x8C0;
-DamageDealtOnEnemy = 0x5A8;
-SpectatedCount = 0x1864;
-MatchId = 0x478;
-Ping = 0x448;
+// ===== 7. 后坐力/动画 =====
+GameData.Offset["AnimScriptInstance"] = 0xE30;
+GameData.Offset["ControlRotation_CP"] = 0x654;
+GameData.Offset["RecoilADSRotation_CP"] = 0x824;
+GameData.Offset["LeanLeftAlpha_CP"] = 0x69C;
+GameData.Offset["LeanRightAlpha_CP"] = 0x6A0;
+GameData.Offset["PreEvalPawnState"] = 0x638;
+GameData.Offset["bIsScoping_CP"] = 0x85D;
+GameData.Offset["bIsReloading_CP"] = 0x73D;
+GameData.Offset["bIsDBNO_CP"] = 0x931;
+GameData.Offset["bIsDBNO0"] = 0x3556;
+GameData.Offset["bIsDBNO1"] = 0x3554;
+GameData.Offset["bIsDBNO2"] = 0x3555;
+GameData.Offset["bIsDead"] = 0x3541;
+GameData.Offset["bIsPreparingThrow_CP"] = 0x540;
+GameData.Offset["bIsThrowing_CP"] = 0x938;
+GameData.Offset["bIsFlashed_CP"] = 0x63F;
+GameData.Offset["bIsInVehicle_CP"] = 0x1490;
+GameData.Offset["bIsParachuting_CP"] = 0x92E;
+GameData.Offset["bIsFreefalling_CP"] = 0x92D;
+GameData.Offset["bEmergencyPickup_Flying_CP"] = 0x92F;
+GameData.Offset["bIsReviving_CP"] = 0x932;
+GameData.Offset["bIsSwimming_CP"] = 0x935;
+GameData.Offset["VTable"] = 0xA58;
 
-PartnerLevel = 0x8D2;
-SurvivalTier = 0xCE8;
-SurvivalLevel = 0xCEC;
-PubgIdData = 0xCE0;
+// ===== 8. 载具 =====
+GameData.Offset["VehicleRiderComponent"] = 0x2100;
+GameData.Offset["LastVehiclePawn"] = 0x270;
+GameData.Offset["ReplicatedMovement"] = 0x78;
+GameData.Offset["SeatIndex"] = 0x230;
+GameData.Offset["VehicleMovement"] = 0x488;
+GameData.Offset["VehicleCommonComponent"] = 0xB50;
+GameData.Offset["FloatingVehicleCommonComponent"] = 0x4F8;
+GameData.Offset["VehicleFuel"] = 0x2E0;
+GameData.Offset["VehicleFuelMax"] = 0x2E4;
+GameData.Offset["VehicleHealth"] = 0x2D8;
+GameData.Offset["VehicleHealthMax"] = 0x2DC;
+GameData.Offset["Wheels"] = 0x328;
+GameData.Offset["WheelLocation"] = 0x100;
+GameData.Offset["DampingRate"] = 0x54;
+GameData.Offset["ShapeRadius"] = 0x48;
 
-CharacterClanInfo = 0x848;
+// ===== 9. 渲染 =====
+GameData.Offset["LastSubmitTime"] = 0x758;
+GameData.Offset["LastRenderTimeOnScreen"] = 0x75C;
+GameData.Offset["RecentlyRendered"] = 0xBD8;
 
-EquippedWeapons = 0x208;
-WeaponProcessor = 0x998;
-CurrentWeaponIndex = 0x319;
-WeaponTrajectoryData = 0x11E0;
-TrajectoryGravityZ = 0x1168;
-FiringAttachPoint = 0x8D0;
-ScopingAttachPoint = 0xDE0;
-TrajectoryConfig = 0x108;
-BallisticCurve = 0x28;
-FloatCurves = 0x38;
-Mesh3P = 0x810;
+// ===== 10. 引擎/物理 =====
+GameData.Offset["PhysxSDK"] = 0x1211EF88;
+GameData.Offset["PhysicsScene"] = 0x9D0;
+GameData.Offset["mPhysXScene"] = 0xD0;
+GameData.Offset["FeatureRepObject"] = 0xCF0;
+GameData.Offset["PlayerState"] = 0x438;
+GameData.Offset["LastUpdateVelocity"] = 0x3E0;
+GameData.Offset["PlayerInput"] = 0x568;
+GameData.Offset["InputYawScale"] = 0x66C;
+GameData.Offset["InputAxisProperties"] = 0x138;
+GameData.Offset["MouseX"] = 0x5016;
+GameData.Offset["MouseY"] = 0x5017;
+GameData.Offset["bShowMouseCursor"] = 0x678;
+GameData.Offset["MyHUD"] = 0x4E8;
+GameData.Offset["TimeSeconds"] = 0x8D0;
+GameData.Offset["WorldToMap"] = 0x84C;
+GameData.Offset["AntiCheatCharacterSyncManager"] = 0x1378;
 
-Keys = 0x60;
+// ===== 11. PlayerInfo/PlayerState =====
+GameData.Offset["PlayerName"] = 0x438;
+GameData.Offset["PlayerStatusType"] = 0x468;
+GameData.Offset["AccountId"] = 0x8F8;
+GameData.Offset["SquadMemberIndex"] = 0x698;
+GameData.Offset["PubgIdData"] = 0xCD8;
+GameData.Offset["SurvivalTier"] = 0xCE0;
+GameData.Offset["SurvivalLevel"] = 0xCE4;
+GameData.Offset["CharacterClanInfo"] = 0x928;
+GameData.Offset["PartnerLevel"] = 0xA1F;
+GameData.Offset["PlayerStatistics"] = 0xA00;
+GameData.Offset["DamageDealtOnEnemy"] = 0x65C;
+GameData.Offset["ping"] = 0x478;
+GameData.Offset["MatchId"] = 0x540;
 
-AttachedStaticComponentMap = 0x1508;
+// ===== 12. Zone/Radar =====
+GameData.Offset["PlayerArray"] = 0x430;
+GameData.Offset["SafetyZoneRadius"] = 0xBC;
+GameData.Offset["SafetyZonePosition"] = 0xB0;
+GameData.Offset["BlueZoneRadius"] = 0xCC;
+GameData.Offset["BlueZonePosition"] = 0xC0;
+GameData.Offset["NumAliveTeams"] = 0x498;
+GameData.Offset["BlueBlockerGaugeTotalMax"] = 0x10;
 
-WeaponConfig_WeaponClass = 0x639;
-ElapsedCookingTime = 0xB14;
+// ===== 13. Inventory/Item =====
+GameData.Offset["InventoryFacade"] = 0x1470;
+GameData.Offset["Inventory"] = 0x438;
+GameData.Offset["InventoryItems"] = 0x6B0;
+GameData.Offset["InventoryItemCount"] = 0x6B8;
+GameData.Offset["InventoryItemTagItemCount"] = 0x40;
+GameData.Offset["ItemID"] = 0x244;
+GameData.Offset["ItemTable"] = 0xB0;
+GameData.Offset["ItemPackageItems"] = 0x598;
+GameData.Offset["DroppedItemGroup"] = 0x1B0;
+GameData.Offset["DroppedItem"] = 0x478;
+GameData.Offset["DroppedItemGroupUItem"] = 0x870;
+GameData.Offset["TimeTillExplosion"] = 0x844;
+GameData.Offset["ExplodeState"] = 0x648;
+GameData.Offset["Equipment"] = 0x420;
+GameData.Offset["ItemsArray"] = 0x588;
+GameData.Offset["Durability"] = 0x1E4;
+GameData.Offset["Durabilitymax"] = 0x1E0;
 
-PlayerInput = 0x550;
-InputAxisProperties = 0x138;
+// ===== 14. Map/Radar/Widget =====
+GameData.Offset["WidgetStateMap"] = 0x558;
+GameData.Offset["TrainingMapGrid"] = 0x5E0;
+GameData.Offset["MapGrid_Map"] = 0x4A8;
+GameData.Offset["LayoutData"] = 0x40;
+GameData.Offset["Visibility"] = 0xA9;
+GameData.Offset["Slot"] = 0x38;
+GameData.Offset["Offsets"] = 0x0;
+GameData.Offset["Alignment"] = 0x20;
+GameData.Offset["BlockInputWidgetList"] = 0x5D0;
+GameData.Offset["SelectMinimapSizeIndex"] = 0x5C8;
+GameData.Offset["CurrentMinimapViewScale1D"] = 0x4A4;
+GameData.Offset["LastMinimapPos"] = 0x4B8;
+GameData.Offset["Minimap"] = 0x480;
 
-LastUpdateVelocity = 0x3E0;
-Mesh = 0x470;
+// ===== 15. Static mesh sockets =====
+GameData.Offset["StaticSockets"] = 0xC8;
+GameData.Offset["StaticSocketName"] = 0x30;
+GameData.Offset["StaticRelativeLocation"] = 0x38;
+GameData.Offset["StaticRelativeRotation"] = 0x44;
+GameData.Offset["StaticRelativeScale"] = 0x50;
+GameData.Offset["SkeletalMesh"] = 0;
+GameData.Offset["Skeleton"] = 0;
+GameData.Offset["SkeletalSockets"] = 0;
+GameData.Offset["SkeletalSocketName"] = 0;
 
-RootComponent = 0x370;
-StaticMesh = 0xAF8;
-Eyes = 0xBD8;
-bAlwaysCreatePhysicsState = 0x488;
 
-VehicleMovement = 0x478;
-VehicleRiderComponent = 0x2120;
-ReplicatedMovement = 0x78;
-LastVehiclePawn = 0x270;
-SeatIndex = 0x230;
+// ===== 16. LineTrace/Hook =====
+GameData.Offset["LineTraceSingle"] = 0xDF90CC;
+GameData.Offset["HOOK"] = 0x121BA280;
+GameData.Offset["HOOK_TWO"] = 0xA9DA06;
+GameData.Offset["Unreal_Engine"] = 0x1283B770;
+GameData.Offset["rigid_dynamics"] = 0x3B98;
 
-Wheels = 0x328;
-WheelLocation = 0x100;
-DampingRate = 0x54;
-ShapeRadius = 0x48;
-
-DroppedItemGroup = 0x230;
-ItemPackageItems = 0x588;
-DroppedItemGroupUItem = 0x870;
-
-AttachedItems = 0x868;
-WeaponAttachmentData = 0x128;
-ItemTable = 0xB0;
-ItemID = 0x240;
-DroppedItem = 0x468;
-
-AnimScriptInstance = 0xE30;
-PreEvalPawnState = 0xB30;
-
-LeanLeftAlpha_CP = 0x69C;
-LeanRightAlpha_CP = 0x6A0;
-CurrentAmmoData = 0xFE4;
-
-bIsInVehicle_CP = 0x63C;
-bIsParachuting_CP = 0x92E;
-bIsFreefalling_CP = 0x92D;
-bEmergencyPickup_Flying_CP = 0x92F;
-bIsReviving_CP = 0x932;
-bIsSwimming_CP = 0x935;
-bIsDBNO = 0x931;
-bIsDead = 0x3515;
-bIsDBNO_CP = 0x931;
-
-bIsScoping_CP = 0x85D;
-bIsPreparingThrow_CP = 0x540;
-bIsThrowing_CP = 0x938;
-bIsFlashed_CP = 0x63F;
-bIsReloading_CP = 0x73D;
-RecoilADSRotation_CP = 0x824;
-ControlRotation_CP = 0x654;
-
-StaticSockets = 0xC8;
-StaticSocketName = 0x30;
-StaticRelativeScale = 0x50;
-StaticRelativeLocation = 0x38;
-StaticRelativeRotation = 0x44;
-
-InputYawScale = 0x654;
-
-AimOffsets = 0x1C50;
-
-AntiCheatCharacterSyncManager = 0x1320;
-
-TimeSeconds = 0xA70;
-TimeTillExplosion = 0x834;
-ExplodeState = 0x638;
-TrainingMapGrid = 0x5B0;
-
-MapGrid_Map = 0x300;
-Gender = 0xB48;
-
-MouseX = 0x4D81;
-MouseY = 0x4D82;
-
-PhysxSDK = 0x12A385C8;
-
-InventoryFacade = 0x1630;
-Inventory = 0x478;
-InventoryItems = 0x608;
-InventoryItemCount = 0x610;
-InventoryItemTagItemCount = 0x40;
-
-Equipment = 0x420;
-ItemsArray = 0x508;
-Durability = 0x1E4;
-Durabilitymax = 0x1E0;
-
-VehicleCommonComponent = 0xB40;
-FloatingComponent = 0x4E8;
-VehicleFuel = 0x2E0;
-VehicleFuelMax = 0x2E4;
-VehicleHealth = 0x2D8;
-VehicleHealthMax = 0x2DC;
-
-MortarLocation = 0xB0;
-MortarRotation = 0x530;
-
-VerticalRecovery = 0x1188;
-RecoilValueVector = 0x110C;
+GameData.Offset["DormantCharacterClientList"] = 0;
