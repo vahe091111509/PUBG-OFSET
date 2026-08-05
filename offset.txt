@@ -34,7 +34,7 @@ constexpr uint64_t TeamNumber = 0x6A0;
 constexpr uint64_t MyHUD = 0x4E0;
 constexpr uint64_t BlockInputWidgetList = 0x5C8;
 constexpr uint64_t bShowMouseCursor = 0x660;
-constexpr uint64_t ComponentLocation = 0x360;
+constexpr uint64_t ComponentLocation = 0x300;
 constexpr uint64_t ComponentToWorld = 0x2F0;
 constexpr uint64_t CharacterState = 0x1660;
 constexpr uint64_t CharacterName = 0x2B10;
@@ -145,7 +145,7 @@ constexpr uint64_t ShapeRadius = 0x48;
  
 constexpr uint64_t DroppedItemGroup = 0x2F0;
 constexpr uint64_t ItemPackageItems = 0x590;
-constexpr uint64_t DroppedItemGroupUItem = 0x880;
+constexpr uint64_t DroppedItemGroupUItem = 0x890;
  
 constexpr uint64_t AttachedItems = 0x878;
 constexpr uint64_t WeaponAttachmentData = 0x128;
